@@ -475,6 +475,10 @@ a {
   overflow: hidden;
 }
 
+.large-hero canvas  {
+    position: relative;
+  }
+
 .large-hero__image img {
     position: absolute;
     top: 0;
