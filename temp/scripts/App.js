@@ -11752,7 +11752,7 @@ var pJSDom = [];
 
 var particles = exports.particles = function particles(tag_id, params) {
 
-  //console.log(params);
+  console.log(params);
 
   /* no string id? so it's object params, and set the id with default id */
   if (typeof tag_id != 'string') {
