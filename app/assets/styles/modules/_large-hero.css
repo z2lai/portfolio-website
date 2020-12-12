@@ -3,6 +3,10 @@
   height: 100vh;
   overflow: hidden;
 
+  & canvas  {
+    position: relative;
+  }
+
   &__image img {
     position: absolute;
     top: 0;
