@@ -3,7 +3,7 @@
   height: 100vh;
   overflow: hidden;
 
-  & canvas  {
+  & canvas {
     position: relative;
   }
 
@@ -30,23 +30,51 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 400px;
+    border-radius: 50%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
     text-align: center;
+    z-index: 1;
     @mixin atMedium {
-      padding-top: 60px;
     }
   }
 
   &__title {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0 0.5em;
+    line-height: 1.875em;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 2.4rem;
     font-weight: 900;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
     color: white;
-    margin: 0;
 
     @mixin atSmall {
-      font-size: 3.8rem;
+      font-size: 2.75rem;
     }
+  }
+
+  &__title::before, &__title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: width 850ms ease;
+    transition-delay: 250ms;
+  }
+
+  &__title::before {
+    top: 0;
+    left: 0;
+  }
+
+  &__title::after {
+    bottom: 0;
+    right: 0;
   }
 
   &__subtitle {
@@ -61,6 +89,7 @@
   }
 
   &__description {
+    line-height: 1.75rem;
     color: #fff;
     font-size: 1.1rem;
     font-weight: 100;
@@ -70,7 +99,7 @@
     margin-right: auto;
 
     @mixin atSmall {
-      font-size: 1.875rem;
+      font-size: 1.25rem;
     }
   }
 }
