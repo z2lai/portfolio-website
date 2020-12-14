@@ -11745,15 +11745,6 @@ var ParticlesOverlay = exports.ParticlesOverlay = function () {
   }
 
   _createClass(ParticlesOverlay, [{
-    key: "events",
-    value: function events() {
-      this.overlay.addEventListener("mousemove", this.delegateMouse.bind(this));
-      this.overlay.addEventListener("click", this.delegateMouse.bind(this));
-    }
-
-    // Currently bugged if refreshing and top of client window is not eqaul to top of document
-
-  }, {
     key: "getRect",
     value: function getRect() {
       var boundingClientRect = this.overlay.getBoundingClientRect();
@@ -11762,16 +11753,20 @@ var ParticlesOverlay = exports.ParticlesOverlay = function () {
       return boundingClientRect;
     }
   }, {
+    key: "events",
+    value: function events() {
+      this.overlay.addEventListener("mousemove", this.delegateMouse.bind(this));
+      this.overlay.addEventListener("click", this.delegateMouse.bind(this));
+    }
+  }, {
     key: "delegateMouse",
     value: function delegateMouse(event) {
-      console.log(this.overlayRect);
       var _overlayRect = this.overlayRect,
           pageX = _overlayRect.pageX,
           pageY = _overlayRect.pageY,
           width = _overlayRect.width,
           height = _overlayRect.height;
 
-      console.log(event.clientY + (pageY + height / 2 - event.pageY));
       var eventCopy = new MouseEvent(event.type, {
         bubbles: event.bubbles,
         cancelable: event.cancelable,
