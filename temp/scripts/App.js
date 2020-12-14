@@ -11740,34 +11740,54 @@ var ParticlesOverlay = exports.ParticlesOverlay = function () {
 
     this.canvas = document.querySelector("#" + tagID + " > .particles-js-canvas-el");
     this.overlay = document.getElementById(overlayID);
-    console.log(this.overlay.getBoundingClientRect());
-    this.overlayCenter = this.getOverlayCenterCoordinates();
-    console.log(this.overlayCenterCoordinates);
+    this.overlayRect = this.getRect();
     this.events();
   }
 
   _createClass(ParticlesOverlay, [{
     key: "events",
     value: function events() {
-      this.overlay.addEventListener('mousemove', this.delegateMouse.bind(this));
-      this.overlay.addEventListener('click', this.delegateMouse.bind(this));
+      this.overlay.addEventListener("mousemove", this.delegateMouse.bind(this));
+      this.overlay.addEventListener("click", this.delegateMouse.bind(this));
     }
 
     // Currently bugged if refreshing and top of client window is not eqaul to top of document
 
   }, {
-    key: "getOverlayCenterCoordinates",
-    value: function getOverlayCenterCoordinates() {
+    key: "getRect",
+    value: function getRect() {
       var boundingClientRect = this.overlay.getBoundingClientRect();
-      var clientX = boundingClientRect.left + boundingClientRect.width / 2;
-      var clientY = boundingClientRect.top + boundingClientRect.height / 2;
-      return { clientX: clientX, clientY: clientY };
+      boundingClientRect.pageX = boundingClientRect.left + window.pageXOffset;
+      boundingClientRect.pageY = boundingClientRect.top + window.pageYOffset;
+      return boundingClientRect;
     }
   }, {
     key: "delegateMouse",
     value: function delegateMouse(event) {
-      var eventCopy = document.createEvent("MouseEvents");
-      eventCopy.initMouseEvent(event.type, event.bubbles, event.cancelable, event.view, event.detail, event.pageX || event.layerX, event.pageY || event.layerY, this.overlayCenter.clientX || event.clientX, this.overlayCenter.clientY || event.clientY, event.ctrlKey, event.altKey, event.shiftKey, event.metaKey, event.button, event.relatedTarget);
+      console.log(this.overlayRect);
+      var _overlayRect = this.overlayRect,
+          pageX = _overlayRect.pageX,
+          pageY = _overlayRect.pageY,
+          width = _overlayRect.width,
+          height = _overlayRect.height;
+
+      console.log(event.clientY + (pageY + height / 2 - event.pageY));
+      var eventCopy = new MouseEvent(event.type, {
+        bubbles: event.bubbles,
+        cancelable: event.cancelable,
+        view: event.view,
+        detail: event.detail,
+        // screenX: event.screenX,
+        // screenY: event.screenY,
+        clientX: event.clientX + (pageX + width / 2 - event.pageX),
+        clientY: event.clientY + (pageY + height / 2 - event.pageY),
+        ctrlKey: event.ctrlKey,
+        altKey: event.altKey,
+        shiftKey: event.shiftKey,
+        metaKey: event.metaKey,
+        button: event.button,
+        relatedTarget: event.relatedTarget
+      });
       this.canvas.dispatchEvent(eventCopy);
     }
   }]);
