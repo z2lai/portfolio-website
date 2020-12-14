@@ -1543,12 +1543,6 @@ export class ParticlesOverlay {
     this.events();
   }
 
-  events() {
-    this.overlay.addEventListener("mousemove", this.delegateMouse.bind(this));
-    this.overlay.addEventListener("click", this.delegateMouse.bind(this));
-  }
-
-  // Currently bugged if refreshing and top of client window is not eqaul to top of document
   getRect() {
     const boundingClientRect = this.overlay.getBoundingClientRect();
     boundingClientRect.pageX = boundingClientRect.left + window.pageXOffset;
@@ -1556,10 +1550,13 @@ export class ParticlesOverlay {
     return boundingClientRect;
   }
 
+  events() {
+    this.overlay.addEventListener("mousemove", this.delegateMouse.bind(this));
+    this.overlay.addEventListener("click", this.delegateMouse.bind(this));
+  }
+
   delegateMouse(event) {
-    console.log(this.overlayRect);
     const { pageX, pageY, width, height } = this.overlayRect;
-    console.log(event.clientY + (pageY + height / 2 - event.pageY));
     const eventCopy = new MouseEvent(event.type, {
       bubbles: event.bubbles,
       cancelable: event.cancelable,
