@@ -10344,8 +10344,16 @@ var _particlesjsConfig = __webpack_require__(5);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _particles.particles)('particles-js', _particlesjsConfig.config);
-var particlesOverlay = new _particles.ParticlesOverlay('particles-js', 'particles-js-overlay');
+window.addEventListener('load', function () {
+  console.log('Window loaded!');
+  window.setTimeout(function () {
+    document.getElementById('banner').classList.remove('large-hero--is-preload');
+  }, 100);
+});
+
+(0, _particles.particles)('banner', _particlesjsConfig.config);
+var particlesOverlay = new _particles.ParticlesOverlay('banner', 'banner-overlay');
+var particlesOverlayButton = new _particles.ParticlesOverlay('banner', 'banner-overlay-button');
 var mobileMenu = new _MobileMenu2.default();
 var revealOnScroll = new _RevealOnScroll2.default();
 
@@ -11400,7 +11408,8 @@ var pJS = function pJS(tagID, params) {
 
     /* on click event */
     if (pJS.interactivity.events.onclick.enable) {
-      pJS.interactivity.el.addEventListener("click", function () {
+      // pJS.interactivity.el.addEventListener("click", function () {
+      pJS.interactivity.el.addEventListener("mousedown", function () {
         pJS.interactivity.mouse.click_pos_x = pJS.interactivity.mouse.pos_x;
         pJS.interactivity.mouse.click_pos_y = pJS.interactivity.mouse.pos_y;
         pJS.interactivity.mouse.click_time = new Date().getTime();
@@ -11724,6 +11733,7 @@ var particles = exports.particles = function particles(tagID, params) {
   /* set size canvas */
   canvas_el.style.width = "100%";
   canvas_el.style.height = "100%";
+  canvas_el.style.position = "absolute"; // Zheng: remove from flow
 
   /* append canvas */
   var canvas = document.getElementById(tagID).appendChild(canvas_el);
@@ -11740,7 +11750,7 @@ var ParticlesOverlay = exports.ParticlesOverlay = function () {
 
     this.canvas = document.querySelector("#" + tagID + " > .particles-js-canvas-el");
     this.overlay = document.getElementById(overlayID);
-    this.overlayRect = this.getRect();
+    this.overlayRect = this.getRect(); // need to add window.resize listener to refresh this value
     this.events();
   }
 
@@ -11756,7 +11766,7 @@ var ParticlesOverlay = exports.ParticlesOverlay = function () {
     key: "events",
     value: function events() {
       this.overlay.addEventListener("mousemove", this.delegateMouse.bind(this));
-      this.overlay.addEventListener("click", this.delegateMouse.bind(this));
+      this.overlay.addEventListener("mousedown", this.delegateMouse.bind(this));
     }
   }, {
     key: "delegateMouse",

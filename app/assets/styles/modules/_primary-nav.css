@@ -1,37 +1,39 @@
 .primary-nav {
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+  justify-content: center;
+  @mixin atMedium {
+    margin-right: 1.5rem;
+    padding: 0;
+  }
+
+  ul {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 1rem 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0 0.5rem;
     @mixin atMedium {
-        margin-right: 1.5rem;
-        padding: 0;
+      margin: 0 1rem;
     }
+  }
 
-    ul {
-        display: flex;
-        align-items: center;
-        padding: 0;
-        margin: 0;
+  a {
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
+    @mixin atMedium {
+      font-size: 1rem;
+      font-weight: 300;
     }
-
-    li {
-        list-style-type: none;
-        margin: 0 0.5rem;        
-        @mixin atMedium {
-            margin: 0 1rem;        
-        }
-    }
-
-    a {
-        font-weight: 500;
-        color: #FFF;
-        text-decoration: none;
-        font-size: 0.9rem;
-        @mixin atMedium {        
-            font-size: 1rem;
-            font-weight: 300;
-        }
-    }
-
+  }
 }

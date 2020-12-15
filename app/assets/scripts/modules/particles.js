@@ -1128,7 +1128,8 @@ const pJS = function (tagID, params) {
 
     /* on click event */
     if (pJS.interactivity.events.onclick.enable) {
-      pJS.interactivity.el.addEventListener("click", function () {
+      // pJS.interactivity.el.addEventListener("click", function () {
+      pJS.interactivity.el.addEventListener("mousedown", function () {
         pJS.interactivity.mouse.click_pos_x = pJS.interactivity.mouse.pos_x;
         pJS.interactivity.mouse.click_pos_y = pJS.interactivity.mouse.pos_y;
         pJS.interactivity.mouse.click_time = new Date().getTime();
@@ -1523,6 +1524,7 @@ export const particles = function (tagID, params) {
   /* set size canvas */
   canvas_el.style.width = "100%";
   canvas_el.style.height = "100%";
+  canvas_el.style.position = "absolute"; // Zheng: remove from flow
 
   /* append canvas */
   var canvas = document.getElementById(tagID).appendChild(canvas_el);
@@ -1539,7 +1541,7 @@ export class ParticlesOverlay {
       "#" + tagID + " > .particles-js-canvas-el"
     );
     this.overlay = document.getElementById(overlayID);
-    this.overlayRect = this.getRect();
+    this.overlayRect = this.getRect(); // need to add window.resize listener to refresh this value
     this.events();
   }
 
@@ -1552,7 +1554,7 @@ export class ParticlesOverlay {
 
   events() {
     this.overlay.addEventListener("mousemove", this.delegateMouse.bind(this));
-    this.overlay.addEventListener("click", this.delegateMouse.bind(this));
+    this.overlay.addEventListener("mousedown", this.delegateMouse.bind(this));
   }
 
   delegateMouse(event) {
