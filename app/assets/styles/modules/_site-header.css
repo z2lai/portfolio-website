@@ -12,7 +12,7 @@
     background-color: rgba($mainBlue, 0.7);
   }
 
-  &__heading {
+  &__logo {
     position: absolute;
     visibility: hidden;
   }
