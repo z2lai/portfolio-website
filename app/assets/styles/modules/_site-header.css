@@ -9,7 +9,7 @@
   }
 
   &--is-expanded {
-    background-color: rgba($mainBlue, 0.7);
+    background-color: rgba($mainGrey, 0.7);
   }
 
   &__logo {
