@@ -9,6 +9,11 @@
         background: $mainBlue;
     }
 
+    &--grey {
+        color: #FFF;
+        background: $mainGrey;
+    }
+
     &--testimonials {
         background-color: $lightBlue;
         @mixin atMedium {

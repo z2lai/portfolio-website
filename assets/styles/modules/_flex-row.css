@@ -1,0 +1,27 @@
+.flex-row {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  &--centered {
+    justify-content: center;
+  }
+  
+  @mixin atMedium {
+    flex-flow: row nowrap;
+
+    &__item {
+      flex: 1 1 auto;
+    }
+
+    &__item--half {
+      max-width: 40%;
+    }
+
+    &__item > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

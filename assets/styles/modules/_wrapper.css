@@ -5,6 +5,10 @@
     max-width: 1236px;
     margin: auto;
 
+    &--grey {
+      background: $mainGrey;
+    }
+
     &--medium {
         max-width: 976px;
     }
