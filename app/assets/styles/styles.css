@@ -12,8 +12,11 @@
 @import "modules/_row";
 @import "modules/_generic-content-container";
 @import "modules/_section-title";
-@import "modules/_subsection-heading";
+@import "modules/_subsection-title";
+@import "modules/_subsection-subtitle";
 @import "modules/_link";
+@import "modules/_token-list";
+@import "modules/_icon";
 @import "modules/_feature-item";
 @import "modules/_testimonial";
 @import "modules/_site-footer";

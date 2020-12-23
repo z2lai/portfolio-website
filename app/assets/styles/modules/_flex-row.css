@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 
   &--centered {
     justify-content: center;
@@ -16,7 +16,7 @@
     }
 
     &__item--half {
-      max-width: 40%;
+      max-width: 46%;
     }
 
     &__item > img {

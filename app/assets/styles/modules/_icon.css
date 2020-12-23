@@ -1,0 +1,16 @@
+.icon {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  stroke-width: 0;
+  stroke: $mainGrey;
+  fill: $mainGrey;
+  filter: saturate(0);
+  transition: filter 150ms;
+  @mixin atSmall {
+  }
+
+  &:hover {
+    filter: saturate(1);
+  }
+}

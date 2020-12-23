@@ -1,0 +1,15 @@
+.token-list {
+  margin-right: 1rem;
+  padding: 0;
+  line-height: 1.65;
+  list-style: none;
+  color: $mainOrange;
+  text-decoration: none;
+  @mixin atSmall {
+    font-size: 1.125rem;
+  }
+
+  li {
+    margin: 0 50px;
+  }
+}

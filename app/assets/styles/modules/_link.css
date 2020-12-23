@@ -3,20 +3,21 @@
   line-height: 1.65;
   color: $mainOrange;
   text-decoration: none;
+  @mixin atSmall {
+    font-size: 1.125rem;
+  }
 
   &--large {
     font-size: 1.25rem;
   }
 
-  @mixin atSmall {
-    font-size: 1.125rem;
-    &__icon {
-      display: inline-block;
-      width: 1rem;
-      height: 1rem;
-      stroke-width: 0;
-      stroke: currentColor;
-      fill: currentColor;
-    }
+  &__icon {
+    margin-right: 3px;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
   }
 }
