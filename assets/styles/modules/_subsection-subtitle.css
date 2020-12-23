@@ -1,0 +1,47 @@
+.subsection-subtitle {
+  position: relative;
+  max-width: 500px;
+  overflow: hidden;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 1.875rem;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: relative;
+    right: 0.5em;
+    margin-left: -50%;
+    display: inline-block;
+    height: 1px;
+    width: 50%;
+    vertical-align: middle;
+    background-color: hsl(279, 25%, 25%);
+  }
+
+  &::after {
+    content: "";
+    position: relative;
+    left: 0.5em;
+    margin-right: -50%;
+    display: inline-block;
+    height: 1px;
+    width: 50%;
+    vertical-align: middle;
+    background-color: hsl(279, 25%, 25%);
+  }
+
+  @mixin atSmall {
+    font-size: 2rem;
+    margin: 3.125rem auto;
+  }
+
+  &--purple {
+    color: $mainPurple;
+  }
+
+  &--turqoise {
+    color: $mainTurqoise;
+  }
+}

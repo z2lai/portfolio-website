@@ -56,7 +56,7 @@
 
       <div class="flex-row">
         <div class="flex-row__item flex-row__item--half generic-content-container">
-          <h3 class="subsection-heading">
+          <h3 class="subsection-title">
             React Multi-step Form Library
           </h3>
           <p>
@@ -65,17 +65,15 @@
             inputs are displayed one at a time, with input validation occurring when the end user clicks the button to
             proceed to the next input.
           </p>
-          <a href="#" class="link">
+          <a href="https://github.com/z2lai/react-emotion-multi-step-form" class="link">
             <svg class="link__icon">
               <use xlink:href="assets/images/icons/symbol-defs.svg#icon-github"></use>
-            </svg>
-            Github
+            </svg>Github
           </a>
-          <a href="#" class="link">
+          <a href="https://z2lai.github.io/react-emotion-multi-step-form/" class="link">
             <svg class="link__icon">
               <use xlink:href="assets/images/icons/symbol-defs.svg#icon-sphere"></use>
-            </svg>
-            Website
+            </svg>Website
           </a>
         </div>
 
@@ -83,8 +81,72 @@
           <img src="assets/images/our-start-landscape-small-i.jpg" alt="Our founder, Jane Doe">
         </div>
 
+
       </div>
 
+      <h4 class="subsection-subtitle">
+        Highlights
+      </h4>
+      <ul class="token-list flex-row flex-row--centered">
+        <li>
+          <svg class="icon">
+            <use xlink:href="assets/images/icons/symbol-defs.svg#icon-react"></use>
+          </svg>
+        </li>
+        <li>
+          <svg class="icon">
+            <use xlink:href="assets/images/icons/symbol-defs.svg#icon-html5-original"></use>
+          </svg>
+        </li>
+        <li>
+          <svg class="icon">
+            <use xlink:href="assets/images/icons/symbol-defs.svg#icon-css3-original"></use>
+          </svg>
+        </li>
+      </ul>
+      <div class="row row--gutters-large generic-content-container">
+        <div class="row__medium-6">
+          <div class="feature-item">
+            <img class="feature-item__icon" src="assets/images/icons/rain.svg">
+            <h3 class="feature-item__title">Declarative Configuration</h3>
+            <p>My focus for this project was to keep the form setup code as simple as possible so I implemented the
+              input components
+              using custom hooks and compound components pattern to allow the user to declaratively configure the
+              inputs.</p>
+          </div>
+
+          <div class="feature-item">
+            <img class="feature-item__icon" src="assets/images/icons/globe.svg">
+            <h3 class="feature-item__title">Optimized Form State Management</h3>
+            <p>Form state management is a common problem that I wanted to solve using concepts such as state colocation
+              and logically
+              separated contexts, I've minimized the number of unnecessary renders.</p>
+          </div>
+        </div>
+
+        <div class="row__medium-6">
+          <div class="feature-item">
+            <img class="feature-item__icon" src="assets/images/icons/wifi.svg">
+            <h3 class="feature-item__title">Optimized Page Transitions</h3>
+            <p>Interactivity in applications is one of the first things that drew me to become a web developer so I made
+              sure to
+              include that in my UI components by implementing the expansion/collapsing of the form body as the size of
+              the input
+              component changes. In order to keep this animation smooth, I made sure to avoid reflow by creating a scale
+              animation for
+              the form body and an inverse scale animation for the form contents using an easing function and a custom
+              hook.</p>
+          </div>
+
+          <div class="feature-item">
+            <img class="feature-item__icon" src="assets/images/icons/fire.svg">
+            <h3 class="feature-item__title">HTML5 Form Validation</h3>
+            <p>A key factor of good usability is conforming to user's expectations, so I made sure that input validation
+              aligned with the HTML5 form validation standard by using the Constraint Validation API. Users are also
+              able to specify custom error messages or a custom validation function altogether.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -92,45 +154,97 @@
     <div class="wrapper">
 
       <h2 class="section-title section-title--turqoise">
-        <img class="section-title__icon" src="assets/images/icons/star.svg">Our <strong>Features</strong>
+        <img class="section-title__icon" src="assets/images/icons/star.svg">Lessons Learnt
       </h2>
 
+
+    </div>
+  </div>
+
+  <section id="my-work" class="page-section">
+    <div class="wrapper">
+
+      <div class="flex-row">
+        <div class="flex-row__item flex-row__item--half generic-content-container">
+          <h3 class="subsection-title">
+            Portfolio Website
+          </h3>
+          <a href="https://github.com/z2lai/react-emotion-multi-step-form" class="link">
+            <svg class="link__icon">
+              <use xlink:href="assets/images/icons/symbol-defs.svg#icon-github"></use>
+            </svg>Github
+          </a>
+          <a href="https://z2lai.github.io/react-emotion-multi-step-form/" class="link">
+            <svg class="link__icon">
+              <use xlink:href="assets/images/icons/symbol-defs.svg#icon-sphere"></use>
+            </svg>Website
+          </a>
+          <p>
+            I built a React library for users to easily create interactive multi-step forms using declarative code. The
+            library handles form state management using the Context API, custom hooks and custom input components. All
+            inputs are displayed one at a time, with input validation occurring when the end user clicks the button to
+            proceed to the next input.
+          </p>
+        </div>
+
+        <div class="flex-row__item flex-row__item--half">
+          <img src="assets/images/our-start-landscape-small-i.jpg" alt="Our founder, Jane Doe">
+        </div>
+
+
+      </div>
+
+      <h4 class="subsection-subtitle">
+        Highlights
+      </h4>
       <div class="row row--gutters-large generic-content-container">
         <div class="row__medium-6">
           <div class="feature-item">
             <img class="feature-item__icon" src="assets/images/icons/rain.svg">
-            <h3 class="feature-item__title">We&rsquo;ll Watch the Weather</h3>
-            <p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes
-              around your current location. A good rain can be refreshing, but sometimes you just want to stay dry.</p>
+            <h3 class="feature-item__title">Declarative Configuration</h3>
+            <p>My focus for this project was to keep the form setup code as simple as possible so I implemented the
+              input
+              components
+              using custom hooks and compound components pattern to allow the user to declaratively configure the
+              inputs.
+            </p>
           </div>
 
           <div class="feature-item">
             <img class="feature-item__icon" src="assets/images/icons/globe.svg">
-            <h3 class="feature-item__title">Global Guides</h3>
-            <p>We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a
-              corner of the world you want to escape to we know the most scenic and inspiring locations.</p>
+            <h3 class="feature-item__title">Optimized Form State Management</h3>
+            <p>Form state management is a common problem that I wanted to solve using concepts such as state colocation
+              and logically
+              separated contexts, I've minimized the number of unnecessary renders.</p>
           </div>
         </div>
 
         <div class="row__medium-6">
           <div class="feature-item">
             <img class="feature-item__icon" src="assets/images/icons/wifi.svg">
-            <h3 class="feature-item__title">Wi-Fi Waypoints</h3>
-            <p>We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve
-              mapped out where local wi-fi spots are and marked them in our app&rsquo;s map view.</p>
+            <h3 class="feature-item__title">Optimized Page Transitions</h3>
+            <p>Interactivity in applications is one of the first things that drew me to become a web developer so I made
+              sure to
+              include that in my UI components by implementing the expansion/collapsing of the form body as the size of
+              the input
+              component changes. In order to keep this animation smooth, I made sure to avoid reflow by creating a scale
+              animation for
+              the form body and an inverse scale animation for the form contents using an easing function and a custom
+              hook.</p>
           </div>
 
           <div class="feature-item">
             <img class="feature-item__icon" src="assets/images/icons/fire.svg">
-            <h3 class="feature-item__title">Survival Kit</h3>
-            <p>Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will
-              allow you to setup a tent, start a fire, scratch your own back and lower your taxes.</p>
+            <h3 class="feature-item__title">HTML5 Form Validation</h3>
+            <p>A key factor of good usability is conforming to user's expectations, so I made sure that input validation
+              aligned with the HTML5 form validation standard by using the Constraint Validation API. Users are also
+              able
+              to specify custom error messages or a custom validation function altogether.</p>
           </div>
         </div>
       </div>
-
     </div>
-  </div>
+  </section>
 
   <div id="testimonials" class="page-section page-section--testimonials">
     <div class="wrapper wrapper--no-padding-until-medium">
