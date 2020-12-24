@@ -1,6 +1,6 @@
 .subsection-title {
   font-size: 1.875rem;
-  font-weight: 400;
+  font-weight: 300;
   text-align: left;
   @mixin atSmall {
     font-size: 2rem;

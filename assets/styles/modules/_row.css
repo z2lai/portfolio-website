@@ -1,82 +1,82 @@
 .row {
+  &--t-padding {
+    padding-top: 80px;
+  }
 
-    &--t-padding {
-        padding-top: 80px;
+  &__b-margin-until-medium {
+    margin-bottom: 1rem;
+  }
+
+  &__b-margin-large-until-medium {
+    margin-bottom: 80px;
+  }
+
+  @mixin atMedium {
+    /* Old Method for Column Layouts:
+      1) Float column divs left and specify column widths in percentages
+      2) Specify padding-right for all columns
+      3) Specify negative margin-right for container to be equal padding-right, columns widths will expand to the right accordingly to fill the negative margin up until the right edge of the container. This effectively centres the content within the container. 
+      */
+
+    @mixin clearfix;
+
+    &--gutters > div {
+      padding-right: 65px;
     }
-    
+
+    &--gutters {
+      margin-right: -65px;
+    }
+
+    &--gutters-large > div {
+      padding-right: 100px;
+    }
+
+    &--gutters-large {
+      margin-right: -100px;
+    }
+
+    &--gutters-small > div {
+      padding-right: 45px;
+    }
+
+    &--gutters-small {
+      margin-right: -45px;
+    }
+
+    &--flexbox {
+      display: flex;
+    }
+
+    &__medium-4 {
+      float: left;
+      width: 33.33%;
+    }
+
+    &__medium-4--larger {
+      width: 37%;
+    }
+
+    &__medium-6 {
+      float: left;
+      width: 50%;
+    }
+
+    &__medium-8 {
+      float: left;
+      width: 66.66%;
+    }
+
+    &__medium-8--smaller {
+      width: 63%;
+    }
+
     &__b-margin-until-medium {
-        margin-bottom: 1rem;
+      margin-bottom: 0rem;
     }
 
-    &__b-margin-large-until-medium {
-        margin-bottom: 80px;
+    &__medium-4--flex-item {
+      flex: 1;
     }
-
-    @mixin atMedium {
-        /* Column Layout Design Pattern:
-        1) Float column divs left and specify column widths in percentages
-        2) Specify padding-right for all columns
-        3) Specify negative margin-right for container to be equal padding-right, columns widths will expand to the right accordingly to fill the negative margin up until the right edge of the container. This effectively centres the content within the container. */
-
-        @mixin clearfix;
-
-        &--gutters > div {
-            padding-right: 65px;
-        }
-
-        &--gutters {
-            margin-right: -65px;
-        }
-
-        &--gutters-large > div {
-            padding-right: 100px;
-        }
-
-        &--gutters-large {
-            margin-right: -100px;
-        }
-
-        &--gutters-small > div {
-            padding-right: 45px;
-        }
-
-        &--gutters-small {
-            margin-right: -45px;
-        }
-        
-        &--flexbox {
-            display: flex;
-        }        
-
-        &__medium-4 {
-            float: left;
-            width: 33.33%;
-        }
-
-        &__medium-4--larger {
-            width: 37%;
-        }
-        
-        &__medium-6 {
-            float: left;
-            width: 50%;
-        }
-
-        &__medium-8 {
-            float: left;
-            width: 66.66%;
-        }
-
-        &__medium-8--smaller {
-            width: 63%;
-        }
-
-        &__b-margin-until-medium {
-            margin-bottom: 0rem;
-        }
-
-        &__medium-4--flex-item {
-            flex: 1;
-        }
-    }
+  }
 }

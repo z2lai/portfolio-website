@@ -3,10 +3,22 @@
   max-width: 500px;
   overflow: hidden;
   font-family: "Open Sans", Helvetica, sans-serif;
-  font-size: 1.875rem;
+  font-size: 1.75rem;
   text-align: center;
   font-weight: normal;
   text-transform: uppercase;
+  @mixin atSmall {
+    font-size: 1.875rem;
+    margin: 0 auto 2rem auto;
+  }
+
+  &--purple {
+    color: $mainPurple;
+  }
+
+  &--turqoise {
+    color: $mainTurqoise;
+  }
 
   &::before {
     content: "";
@@ -30,18 +42,5 @@
     width: 50%;
     vertical-align: middle;
     background-color: hsl(279, 25%, 25%);
-  }
-
-  @mixin atSmall {
-    font-size: 2rem;
-    margin: 3.125rem auto;
-  }
-
-  &--purple {
-    color: $mainPurple;
-  }
-
-  &--turqoise {
-    color: $mainTurqoise;
   }
 }
