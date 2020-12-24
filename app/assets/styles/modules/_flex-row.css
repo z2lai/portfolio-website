@@ -2,26 +2,44 @@
   position: relative;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-
-  &--centered {
-    justify-content: center;
-  }
-  
+  justify-content: space-around;
   @mixin atMedium {
-    flex-flow: row nowrap;
-
-    &__item {
-      flex: 1 1 auto;
+    &--gutters {
+      margin-left: -80px;
     }
 
-    &__item--half {
-      max-width: 46%;
+    &--gutters > &__item {
+      padding-left: 80px;
     }
 
-    &__item > img {
+    &--gutters-small {
+      margin-left: -50px;
+    }
+    
+    &--gutters-small > &__item {
+      padding-left: 50px;
+    }
+
+    &--narrow {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    &__img {
       width: 100%;
       height: auto;
     }
+
+    &__item--half {
+      flex: 0 0 50%;
+    }
+
+    &__item--third {
+      flex: 0 0 33%;
+    }
+  }
+
+  &--centered {
+    justify-content: center;
   }
 }
