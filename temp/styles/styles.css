@@ -735,7 +735,7 @@ a {
 @media (min-width: 800px) {
 
 .page-section {
-        padding: 4.5rem 0
+        padding: 6rem 0
 }
     }
 
@@ -848,13 +848,17 @@ a {
     }
 
     .flex-row--narrow {
-      padding-left: 80px;
-      padding-right: 80px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
 
     .flex-row__img {
       width: 100%;
       height: auto;
+    }
+
+    .flex-row__item {
+      
     }
 
     .flex-row__item--half {
@@ -970,7 +974,7 @@ a {
 
 .generic-content-container p {
         line-height: 1.65;
-        font-weight: 300;   
+        font-weight: 400;   
         margin: 0.75rem 0;
     }
 
@@ -1035,8 +1039,8 @@ a {
 @media (min-width: 800px) {
 
 .subsection {
-        margin-top: 4.5rem;
-        margin-bottom: 4.5rem
+        margin-top: 5rem;
+        margin-bottom: 5rem
 }
     }
 
@@ -1077,7 +1081,7 @@ a {
 
 .subsection-subtitle {
     font-size: 1.875rem;
-    margin: 0 auto 2rem auto
+    margin: 0 auto 3rem auto
 }
     }
 
@@ -1156,7 +1160,8 @@ a {
 @media (min-width: 530px) {
 
 .token-list {
-    font-size: 1.125rem
+    font-size: 1.125rem;
+    margin: 0
 }
     }
 
@@ -1189,14 +1194,13 @@ a {
 
 .feature-item {
   position: relative;
-  padding-bottom: 1rem;
+  margin-top: 3rem;
 }
 
 @media (min-width: 530px) {
 
 .feature-item {
     padding-left: 3.75em;
-    padding-bottom: 2rem;
     text-align: left
 }
     }
@@ -1213,8 +1217,8 @@ a {
     }
 
 .feature-item__title {
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1.125rem;
+    font-weight: 600;
     text-align: left;
     margin-bottom: 0.8rem;
     margin-top: 0.7em;
@@ -1223,7 +1227,7 @@ a {
 @media (min-width: 530px) {
 
 .feature-item__title {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       padding-top: 0.125em
   }
     }

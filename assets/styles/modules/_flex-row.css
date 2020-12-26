@@ -21,13 +21,17 @@
     }
 
     &--narrow {
-      padding-left: 80px;
-      padding-right: 80px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
 
     &__img {
       width: 100%;
       height: auto;
+    }
+
+    &__item {
+      
     }
 
     &__item--half {

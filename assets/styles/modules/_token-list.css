@@ -6,6 +6,7 @@
   text-decoration: none;
   @mixin atSmall {
     font-size: 1.125rem;
+    margin: 0;
   }
 
   li {
