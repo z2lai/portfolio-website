@@ -9,7 +9,11 @@
   text-transform: uppercase;
   @mixin atSmall {
     font-size: 1.875rem;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto 1rem auto;
+  }
+
+  &--grey {
+    color: $mainGrey;
   }
 
   &--purple {
