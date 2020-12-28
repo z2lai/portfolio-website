@@ -2,43 +2,42 @@
   position: relative;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   @mixin atMedium {
+    &--align-center {
+      align-items: center;
+    }
+
     &--gutters {
-      margin-left: -80px;
+      margin-left: -35px;
     }
 
     &--gutters > &__item {
-      padding-left: 80px;
+      padding-left: 35px;
     }
 
-    &--gutters-small {
-      margin-left: -50px;
-    }
-    
-    &--gutters-small > &__item {
-      padding-left: 50px;
+    &__item-half {
+      flex: none;
     }
 
-    &--narrow {
-      padding-left: 40px;
-      padding-right: 40px;
+    &__item-half--small {
+      width: 488px;
     }
 
-    &__img {
+    &__item-half--large {
+      width: 528px;
+    }
+
+    &__item-half img {
       width: 100%;
       height: auto;
     }
 
-    &__item {
-      
+    &__item-half:first-child {
+      margin-right: 64px;
     }
 
-    &__item--half {
-      flex: 0 0 50%;
-    }
-
-    &__item--third {
+    &__item-4 {
       flex: 0 0 33%;
     }
   }

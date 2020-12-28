@@ -1,6 +1,7 @@
 .link {
   margin-right: 1rem;
   line-height: 1.65;
+  font-weight: 500;
   color: $mainOrange;
   text-decoration: none;
   @mixin atSmall {

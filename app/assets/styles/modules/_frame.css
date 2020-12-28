@@ -1,0 +1,9 @@
+.frame {
+  padding: 20px;
+  background: #fff;
+  box-shadow: rgba(46, 46, 61, 0.24) 0px 24px 64px 0px;
+
+  &--padded {
+    padding: 40px 60px;
+  }
+}
