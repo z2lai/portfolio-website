@@ -9,6 +9,10 @@
   text-transform: uppercase;
   @mixin atSmall {
     font-size: 1.875rem;
+    margin: 0 auto 2rem auto;
+  }
+
+  &--inline {
     margin: 0 auto 1rem auto;
   }
 

@@ -1,24 +1,47 @@
 .page-section {
-    padding: 1.2rem 0;
+  position: relative;
+  padding: 1.2rem 0;
+  @mixin atMedium {
+    padding: 5rem 0;
+  }
+
+  &--blue {
+    color: #fff;
+    background: $mainBlue;
+  }
+
+  &--grey {
+    color: #fff;
+    background: $mainGrey;
+  }
+
+  &--testimonials {
+    background-color: $lightBlue;
     @mixin atMedium {
-        padding: 5rem 0;
+      background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
+      background-size: cover;
     }
+  }
 
-    &--blue {
-        color: #FFF;
-        background: $mainBlue;
-    }
+  &__custom-shape-divider {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
 
-    &--grey {
-        color: #FFF;
-        background: $mainGrey;
-    }
+  &__custom-shape-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 550px;
+  }
 
-    &--testimonials {
-        background-color: $lightBlue;
-        @mixin atMedium {
-            background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-            background-size: cover;
-        }
-    }
+  &__custom-shape-divider .shape-fill {
+    fill: #ffffff;
+  }
 }

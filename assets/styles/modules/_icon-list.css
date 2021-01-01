@@ -1,0 +1,36 @@
+.icon-list {
+  padding: 0;
+  line-height: 1.65;
+  list-style: none;
+  color: $mainOrange;
+  text-decoration: none;
+  @mixin atSmall {
+    font-size: 1.125rem;
+    margin: 0;
+  }
+
+  &__icon {
+    display: inline-block;
+    margin: 0 50px;
+    width: 5rem;
+    height: 5rem;
+    stroke-width: 0;
+    stroke: $mainGrey;
+    fill: $mainGrey;
+    filter: saturate(0);
+    transition: filter 150ms;
+    @mixin atSmall {
+
+    }
+  }
+
+  &__icon:hover {
+    filter: saturate(1);
+  }
+
+  &__icon--small {
+    margin: 0 15px;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}

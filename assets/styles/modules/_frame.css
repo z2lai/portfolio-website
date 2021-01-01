@@ -1,9 +1,12 @@
 .frame {
-  padding: 20px;
-  background: #fff;
+  background: transparent;
   box-shadow: rgba(46, 46, 61, 0.24) 0px 24px 64px 0px;
-
+  
   &--padded {
+    padding: 20px;
+  }
+
+  &--extra-padded {
     padding: 40px 60px;
   }
 }
