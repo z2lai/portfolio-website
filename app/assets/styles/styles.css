@@ -6,6 +6,8 @@
 @import "modules/_wrapper";
 /* @import "modules/_btn"; */
 @import "modules/_button";
+/* @import "modules/_devices"; */
+@import "modules/_devices-scaled";
 @import "modules/_page-section";
 @import "modules/_headline";
 @import "modules/_frame";
@@ -17,8 +19,7 @@
 @import "modules/_subsection-title";
 @import "modules/_subsection-subtitle";
 @import "modules/_link";
-@import "modules/_token-list";
-@import "modules/_icon";
+@import "modules/_icon-list";
 @import "modules/_feature-item";
 @import "modules/_background-image";
 @import "modules/_testimonial";

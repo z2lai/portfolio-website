@@ -20,12 +20,20 @@
       flex: none;
     }
 
+    &__item-half--extra-small {
+      width: 408px;
+    }
+
     &__item-half--small {
-      width: 488px;
+      width: 478px;
     }
 
     &__item-half--large {
-      width: 528px;
+      width: 538px;
+    }
+
+    &__item-half--extra-large {
+      width: 608px;
     }
 
     &__item-half img {
@@ -39,6 +47,10 @@
 
     &__item-4 {
       flex: 0 0 33%;
+    }
+
+    &__item-full {
+      flex: 1 1 100%;
     }
   }
 
