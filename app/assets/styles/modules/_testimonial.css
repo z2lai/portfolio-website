@@ -3,6 +3,7 @@
     height: 100%;
     padding: 80px 18px 1px 18px;
     background-color: $lightBlue;
+    color: $secondaryGrey;
     @mixin atMedium {
         padding: 80px 1.8125rem 1px 1.8125rem;
         background-color: rgba(255, 255, 255, .8);

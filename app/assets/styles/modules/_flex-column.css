@@ -1,0 +1,12 @@
+.flex-column {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  @mixin atMedium {
+  }
+
+  &__item {
+    margin-top: 1.5rem;
+  }
+}

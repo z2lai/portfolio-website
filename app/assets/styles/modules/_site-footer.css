@@ -1,16 +1,13 @@
 .site-footer {
-    background-color: $mainGrey;
-    color: #FFF;
-    padding: .5rem 0;
-    text-align: center;
-
-    &__text {
-        display: block;
-        margin-bottom: 1rem;
-        font-weight: 200;
-        @mixin atMedium {
-            display: inline;
-            margin: 0 1.4rem 0 0;
-        }
-    }
+  margin: 0 auto;
+  padding: 2rem 0;
+  border-top: 1px solid #e2e2e9;
+  line-height: 1.5rem;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  @mixin atMedium {
+  }
 }

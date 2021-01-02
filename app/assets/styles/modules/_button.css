@@ -1,11 +1,12 @@
 .button {
+  position: relative;
   display: inline-block;
-  border: 0;
-  border-radius: 2px;
-  margin-top: 2rem;
-  padding: 0.75em 1.75em;
+  margin: 0 1rem;
+  padding: 0.75em 2em;
   line-height: 1.5rem;
-  font-weight: 100;
+  letter-spacing: 0.2em;
+  font-weight: 300;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
@@ -22,11 +23,24 @@
   }
 
   &--large {
-    font-size: 1rem;
-    padding: 1.1rem 1.9rem;
+    padding: 0.75rem 3rem;
+  }
 
-    @mixin atSmall {
-      font-size: 1.25rem;
-    }
+  &--round {
+    padding: 2rem;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2rem;
+    height: 2rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
   }
 }

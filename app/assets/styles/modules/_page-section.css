@@ -15,11 +15,22 @@
     background: $mainGrey;
   }
 
-  &--testimonials {
-    background-color: $lightBlue;
+  &--about {
     @mixin atMedium {
-      background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
+      color: #FFFFFF;
+      padding-top: 8rem;
+      padding-bottom: 0;
+      background-color: $secondaryGrey;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.7)
+        ),
+        url("/assets/images/high-contrast-mountain.jpg");
+      background-position: center;
       background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
   }
 
@@ -38,7 +49,7 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 550px;
+    height: 500px;
   }
 
   &__custom-shape-divider .shape-fill {

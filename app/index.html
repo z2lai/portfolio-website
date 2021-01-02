@@ -25,8 +25,8 @@
       <nav class="primary-nav">
         <ul>
           <li><a href="#banner">Home</a></li>
-          <li><a href="#features">Projects</a></li>
-          <li><a href="#testimonials">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#testimonials">Contact</a></li>
         </ul>
       </nav>
@@ -55,9 +55,9 @@
     <div class="wrapper">
 
       <div class="generic-content-container generic-content-container--medium generic-content-container--center">
-        <h2 class="section-title section-title--grey">Projects</h2>
+        <h2 id="projects" class="section-title section-title--grey">Projects</h2>
         <p>
-          Projects designed and implemented by me.
+          Designed and implemented by me.
         </p>
       </div>
 
@@ -317,15 +317,18 @@
       </div>
   </section>
 
-  <div id="testimonials" class="page-section page-section--testimonials">
-    <div class="subsection wrapper wrapper--no-padding-until-medium">
+  <section id="about" class="page-section page-section--about">
+    <div class="wrapper wrapper--no-padding-until-medium">
+      <div
+        class="generic-content-container generic-content-container--medium generic-content-container--center generic-content-container--overlay">
+        <h2 id="about" class="section-title section-title--white">About</h2>
+        <p>
+          My background and experience.
+        </p>
+      </div>
 
-      <h2 class="section-title section-title--turqoise">
-        <img class="section-title__icon"
-        src="assets/images/icons/comment.svg">About <strong>Me</strong>
-      </h2>
-
-      <div class="row row--flexbox row--gutters-small row--t-padding generic-content-container">
+      <div
+        class="subsection row row--flexbox row--gutters-small row--t-padding generic-content-container generic-content-container--center">
         <div class="row__medium-4--flex-item">
           <div class="testimonial testimonial--b-margin-until-medium">
             <div class="testimonial__profile-picture">
@@ -372,15 +375,48 @@
         </div>
       </div>
 
-    </div>
-  </div>
+      <div class="subsection flex-column">
+        <ul class="flex-row flex-row--centered flex-column__item">
+          <li>
+            <a href="https://www.linkedin.com/in/zheng-lai-9a30808b/" class="button button--round">
+              <svg class="button__icon">
+                <use xlink:href="assets/images/icons/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/z2lai/" class="button button--round">
+              <svg class="button__icon">
+                <use xlink:href="assets/images/icons/symbol-defs.svg#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://codepen.io/your-work/" class="button button--round">
+              <svg class="button__icon">
+                <use xlink:href="assets/images/icons/symbol-defs.svg#icon-codepen"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/z2lai/" class="button button--round">
+              <svg class="button__icon">
+                <use xlink:href="assets/images/icons/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a href="#my-work" class="button button--large flex-column__item">Resume</a>
+      </div>
 
-  <footer class="site-footer">
-    <div class="wrapper">
-      <p><span class="site-footer__text">Copyright &copy; 2016 Clear View Escapes. All rights reserved.</span><a
-          href="#" class="btn btn--orange">Get in Touch</a></p>
+      <p class="site-footer">
+        Zheng Lai ©2020
+      </p>
+
     </div>
-  </footer>
+  </section>
+
+
 
   <script src="temp/scripts/App.js"></script>
 </body>
