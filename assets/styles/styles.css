@@ -12,6 +12,7 @@
 @import "modules/_headline";
 @import "modules/_frame";
 @import "modules/_flex-row";
+@import "modules/_flex-column";
 @import "modules/_row";
 @import "modules/_generic-content-container";
 @import "modules/_section-title";

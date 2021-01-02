@@ -13,8 +13,8 @@
     color: $mainGrey;
   }
 
-  &--turqoise {
-    color: $mainTurqoise;
+  &--white {
+    color: #ffffff;
   }
 
   strong {
