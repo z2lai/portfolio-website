@@ -7,8 +7,8 @@
       rgba(126, 57, 57, 0.3),
       rgba(0, 0, 0, 0.7)
     ),
-    url("/assets/images/mountains-hero--medium.jpg");
-  background-position: center;
+    url("/assets/images/night-mountains-hero.jpg");
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -37,9 +37,9 @@
 
   &__text-content {
     position: absolute;
-    top: 50%;
+    top: 33.3%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     max-width: 400px;
     border-radius: 50%;
     letter-spacing: 0.2em;
@@ -107,8 +107,11 @@
   }
 
   &__button {
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    left: 50%;
+    transform: translateX(-50%);
     display: inline-block;
-    margin-top: 2rem;
     border: 0;
     padding: 0.75em 1.875em;
     line-height: 1.5rem;
