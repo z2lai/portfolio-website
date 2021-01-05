@@ -10344,18 +10344,28 @@ var _particlesjsConfig = __webpack_require__(5);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-window.addEventListener('load', function () {
-  console.log('Window loaded!');
+window.addEventListener("load", function () {
+  console.log("Window loaded!");
   window.setTimeout(function () {
-    document.getElementById('banner').classList.remove('large-hero--is-preload');
+    document.getElementById("banner").classList.remove("large-hero--is-preload");
   }, 100);
 });
 
-(0, _particles.particles)('banner', _particlesjsConfig.config);
-var particlesOverlay = new _particles.ParticlesOverlay('banner', 'banner-overlay');
-var particlesOverlayButton = new _particles.ParticlesOverlay('banner', 'banner-overlay-button');
+(0, _particles.particles)("banner", _particlesjsConfig.config);
+var particlesOverlay = new _particles.ParticlesOverlay("banner", "banner-overlay");
+// const particlesOverlayButton = new ParticlesOverlay(
+//   "banner",
+//   "banner-overlay-button"
+// );
 var mobileMenu = new _MobileMenu2.default();
 var revealOnScroll = new _RevealOnScroll2.default();
+
+var elem = document.getElementById("repulse-div");
+var pos_x = elem.offsetLeft,
+    pos_y = elem.offsetTop + elem.offsetHeight / 2,
+    div_width = elem.offsetWidth / 2;
+
+console.log(pos_x, pos_y, div_width);
 
 /***/ }),
 /* 2 */
@@ -10998,7 +11008,7 @@ var pJS = function pJS(tagID, params) {
         pJS.fn.modes.bubbleParticle(p);
       }
 
-      if (isInArray("repulse", pJS.interactivity.events.onhover.mode) || isInArray("repulse", pJS.interactivity.events.onclick.mode)) {
+      if (isInArray("repulse", pJS.interactivity.events.onhover.mode) || isInArray("repulse", pJS.interactivity.events.onclick.mode) || isInArray("repulse", pJS.interactivity.events.ondiv.mode)) {
         pJS.fn.modes.repulseParticle(p);
       }
 
@@ -11334,6 +11344,38 @@ var pJS = function pJS(tagID, params) {
           p.vy = p.vy_i;
         }
       }
+      /* Zheng: if fixed repulse div */
+    } else if (pJS.interactivity.events.ondiv.enable) {
+      var elem = document.getElementById(pJS.interactivity.events.ondiv.el);
+
+      // Find position of center of div relative to its parent
+      var pos_x = elem.offsetLeft - elem.offsetWidth / 2 + elem.offsetWidth / 2,
+          // accounts for transform: translateX(-50%)
+      pos_y = elem.offsetTop + elem.offsetHeight / 2;
+      // div_width = elem.offsetWidth / 2;
+
+      if (pJS.tmp.retina) {
+        pos_x *= pJS.canvas.pxratio;
+        pos_y *= pJS.canvas.pxratio;
+        // div_width *= pJS.canvas.pxratio;
+      }
+
+      var dx_div = p.x - pos_x,
+          dy_div = p.y - pos_y,
+          dist_div = Math.sqrt(dx_div * dx_div + dy_div * dy_div);
+
+      var normVec = { x: dx_div / dist_div, y: dy_div / dist_div },
+          repulseRadius = pJS.interactivity.modes.repulse.distance,
+          velocity = 100,
+          repulseFactor = clamp(1 / repulseRadius * (-1 * Math.pow(dist_div / repulseRadius, 4) + 1) * repulseRadius * velocity, 0, 50);
+
+      var pos = {
+        x: p.x + normVec.x * repulseFactor,
+        y: p.y + normVec.y * repulseFactor
+      };
+
+      p.x = pos.x;
+      p.y = pos.y;
     }
   };
 
@@ -11733,7 +11775,7 @@ var particles = exports.particles = function particles(tagID, params) {
   /* set size canvas */
   canvas_el.style.width = "100%";
   canvas_el.style.height = "100%";
-  canvas_el.style.position = "absolute"; // Zheng: remove from flow
+  // canvas_el.style.position = "absolute"; // Zheng: remove from flow
 
   /* append canvas */
   var canvas = document.getElementById(tagID).appendChild(canvas_el);
@@ -11903,8 +11945,13 @@ var config = exports.config = {
   "interactivity": {
     "detect_on": "canvas",
     "events": {
-      "onhover": {
+      "ondiv": {
         "enable": true,
+        "mode": "repulse",
+        "el": "repulse-div"
+      },
+      "onhover": {
+        "enable": false,
         "mode": "repulse"
       },
       "onclick": {
@@ -11928,7 +11975,7 @@ var config = exports.config = {
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
+        "distance": 210,
         "duration": 0.4
       },
       "push": {

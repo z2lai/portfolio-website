@@ -4,7 +4,7 @@
   overflow: hidden;
   background-image: linear-gradient(
       to bottom,
-      rgba(126, 57, 57, 0.3),
+      rgba(126, 57, 57, 0),
       rgba(0, 0, 0, 0.7)
     ),
     url("/assets/images/night-mountains-hero.jpg");
@@ -37,7 +37,7 @@
 
   &__text-content {
     position: absolute;
-    top: 33.3%;
+    top: 33%;
     left: 50%;
     transform: translateX(-50%);
     max-width: 400px;
