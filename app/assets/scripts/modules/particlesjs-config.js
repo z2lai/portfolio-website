@@ -70,8 +70,13 @@ export const config = {
   "interactivity": {
     "detect_on": "canvas",
     "events": {
-      "onhover": {
+      "ondiv": {
         "enable": true,
+        "mode": "repulse",
+        "el": "repulse-div"
+      },
+      "onhover": {
+        "enable": false,
         "mode": "repulse"
       },
       "onclick": {
@@ -95,7 +100,7 @@ export const config = {
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
+        "distance": 210,
         "duration": 0.4
       },
       "push": {

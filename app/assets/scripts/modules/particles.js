@@ -617,7 +617,8 @@ const pJS = function (tagID, params) {
 
       if (
         isInArray("repulse", pJS.interactivity.events.onhover.mode) ||
-        isInArray("repulse", pJS.interactivity.events.onclick.mode)
+        isInArray("repulse", pJS.interactivity.events.onclick.mode) ||
+        isInArray("repulse", pJS.interactivity.events.ondiv.mode)
       ) {
         pJS.fn.modes.repulseParticle(p);
       }
@@ -1032,6 +1033,44 @@ const pJS = function (tagID, params) {
           p.vy = p.vy_i;
         }
       }
+      /* Zheng: if fixed repulse div */
+    } else if (pJS.interactivity.events.ondiv.enable) {
+      var elem = document.getElementById(pJS.interactivity.events.ondiv.el);
+
+      // Find position of center of div relative to its parent
+      var pos_x = elem.offsetLeft - elem.offsetWidth / 2 + elem.offsetWidth / 2, // accounts for transform: translateX(-50%)
+        pos_y = elem.offsetTop + elem.offsetHeight / 2;
+        // div_width = elem.offsetWidth / 2;
+
+      if (pJS.tmp.retina) {
+        pos_x *= pJS.canvas.pxratio;
+        pos_y *= pJS.canvas.pxratio;
+        // div_width *= pJS.canvas.pxratio;
+      }
+
+      var dx_div = p.x - pos_x,
+        dy_div = p.y - pos_y,
+        dist_div = Math.sqrt(dx_div * dx_div + dy_div * dy_div);
+
+      var normVec = { x: dx_div / dist_div, y: dy_div / dist_div },
+        repulseRadius = pJS.interactivity.modes.repulse.distance,
+        velocity = 100,
+        repulseFactor = clamp(
+          (1 / repulseRadius) *
+            (-1 * Math.pow(dist_div / repulseRadius, 4) + 1) *
+            repulseRadius *
+            velocity,
+          0,
+          50
+        );
+
+      var pos = {
+        x: p.x + normVec.x * repulseFactor,
+        y: p.y + normVec.y * repulseFactor,
+      };
+
+      p.x = pos.x;
+      p.y = pos.y;
     }
   };
 
@@ -1524,7 +1563,7 @@ export const particles = function (tagID, params) {
   /* set size canvas */
   canvas_el.style.width = "100%";
   canvas_el.style.height = "100%";
-  canvas_el.style.position = "absolute"; // Zheng: remove from flow
+  // canvas_el.style.position = "absolute"; // Zheng: remove from flow
 
   /* append canvas */
   var canvas = document.getElementById(tagID).appendChild(canvas_el);
