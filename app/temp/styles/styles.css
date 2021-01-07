@@ -1180,7 +1180,7 @@ ul {
 @media (min-width: 800px) {
 
 .page-section {
-    padding: 5rem 0
+    padding: 6rem 0
 }
     }
 
@@ -1198,7 +1198,6 @@ ul {
 
 .page-section--about {
       color: #FFFFFF;
-      padding-top: 8rem;
       padding-bottom: 0;
       background-color: #5E7387;
       background-image: -webkit-gradient(
@@ -1224,7 +1223,7 @@ ul {
 .page-section__custom-shape-divider {
     position: absolute;
     z-index: 1;
-    top: 100%;
+    top: calc(100% - 20px);
     left: 0;
     width: 100%;
     overflow: hidden;

@@ -2,7 +2,7 @@
   position: relative;
   padding: 1.2rem 0;
   @mixin atMedium {
-    padding: 5rem 0;
+    padding: 6rem 0;
   }
 
   &--blue {
@@ -18,7 +18,6 @@
   &--about {
     @mixin atMedium {
       color: #FFFFFF;
-      padding-top: 8rem;
       padding-bottom: 0;
       background-color: $secondaryGrey;
       background-image: linear-gradient(
@@ -37,7 +36,7 @@
   &__custom-shape-divider {
     position: absolute;
     z-index: 1;
-    top: 100%;
+    top: calc(100% - 20px);
     left: 0;
     width: 100%;
     overflow: hidden;
