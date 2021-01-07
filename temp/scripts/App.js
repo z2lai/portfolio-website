@@ -10342,6 +10342,10 @@ var _particles = __webpack_require__(4);
 
 var _particlesjsConfig = __webpack_require__(5);
 
+var _toggleHeader = __webpack_require__(6);
+
+var _toggleHeader2 = _interopRequireDefault(_toggleHeader);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 window.addEventListener("load", function () {
@@ -10350,6 +10354,8 @@ window.addEventListener("load", function () {
     document.getElementById("banner").classList.remove("large-hero--is-preload");
   }, 100);
 });
+
+window.addEventListener("scroll", _toggleHeader2.default);
 
 (0, _particles.particles)("banner", _particlesjsConfig.config);
 var particlesOverlay = new _particles.ParticlesOverlay("banner", "banner-overlay");
@@ -11988,6 +11994,29 @@ var config = exports.config = {
   },
   "retina_detect": true
 };
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var toggleHeader = function toggleHeader() {
+  var header = document.getElementsByClassName('site-header')[0];
+  var headerRect = header.getBoundingClientRect();
+  var scrollYCriteria = window.innerHeight - headerRect.height;
+  if (window.pageYOffset >= scrollYCriteria) {
+    header.classList.add('site-header--is-translucent');
+  } else {
+    header.classList.remove("site-header--is-translucent");
+  }
+};
+
+exports.default = toggleHeader;
 
 /***/ })
 /******/ ]);

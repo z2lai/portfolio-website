@@ -1929,18 +1929,18 @@ ul {
 
 .site-header {
   position: fixed;
-  z-index: 2;
+  z-index: 10;
   width: 100%;
   padding: 15px 0;
-  -webkit-transition: background 0.2s ease-out;
-  transition: background 0.2s ease-out;
 }
+
+/* transition: background 0.2s ease-out; */
 
 @media (min-width: 800px) {
     }
 
-.site-header--is-expanded {
-    background-color: rgba(46,56,66, 0.7);
+.site-header--is-translucent {
+    background-color: rgba(46,56,66, 0.8);
   }
 
 .site-header__logo {
