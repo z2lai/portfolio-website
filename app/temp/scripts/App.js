@@ -11876,7 +11876,7 @@ Object.defineProperty(exports, "__esModule", {
 var config = exports.config = {
   "particles": {
     "number": {
-      "value": 400,
+      "value": 333,
       "density": {
         "enable": false,
         "value_area": 800
@@ -11901,7 +11901,7 @@ var config = exports.config = {
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.3,
       "random": true,
       "anim": {
         "enable": false,
@@ -11968,7 +11968,7 @@ var config = exports.config = {
         }
       },
       "bubble": {
-        "distance": 250,
+        "distance": 225,
         "size": 4,
         "duration": 0.5,
         "opacity": 1,
