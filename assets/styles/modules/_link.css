@@ -5,7 +5,6 @@
   color: $mainOrange;
   text-decoration: none;
   @mixin atSmall {
-    font-size: 1.125rem;
   }
 
   &:hover {
@@ -16,6 +15,7 @@
   }
 
   &__icon {
+    margin-top: 1px;
     margin-right: 3px;
     display: inline-block;
     width: 1rem;
