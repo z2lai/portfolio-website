@@ -3,12 +3,11 @@
   z-index: 10;
   width: 100%;
   padding: 15px 0;
-  /* transition: background 0.2s ease-out; */
   @mixin atMedium {
   }
 
   &--is-translucent {
-    background-color: rgba($mainGrey, 0.8);
+    background-color: rgba($mainGrey, 0.75);
   }
 
   &__logo {
