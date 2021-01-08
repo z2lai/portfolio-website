@@ -1310,7 +1310,7 @@ ul {
   }
 
 .frame--extra-padded {
-    padding: 40px 60px;
+    padding: 20px 30px;
   }
 
 .flex-row {
@@ -1322,9 +1322,9 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 800px) {
@@ -1335,11 +1335,7 @@ ul {
     }
 
     .flex-row--gutters {
-      margin-left: -35px;
-    }
-
-    .flex-row--gutters > .flex-row__item {
-      padding-left: 35px;
+      margin-left: -36px;
     }
 
     .flex-row__item-half {
@@ -1371,6 +1367,23 @@ ul {
 
     .flex-row__item-half:first-child {
       margin-right: 64px;
+    }
+
+    .flex-row__item--feature-item {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 33%;
+              flex: 0 0 33%;
+      margin-top: 2rem;
+      padding: 15px 25px;
+      -webkit-transition: -webkit-box-shadow 450ms;
+      transition: -webkit-box-shadow 450ms;
+      transition: box-shadow 450ms;
+      transition: box-shadow 450ms, -webkit-box-shadow 450ms;
+    }
+
+    .flex-row__item--feature-item:hover {
+      -webkit-box-shadow: rgba(46, 46, 61, 0.24) 0px 24px 64px 0px;
+              box-shadow: rgba(46, 46, 61, 0.24) 0px 24px 64px 0px;
     }
 
     .flex-row__item-4 {
@@ -1785,13 +1798,12 @@ ul {
 
 .feature-item {
   position: relative;
-  margin-top: 3rem;
 }
 
 @media (min-width: 530px) {
 
 .feature-item {
-    padding-left: 3.5em;
+    padding-left: 3.25em;
     text-align: left
 }
     }

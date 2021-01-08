@@ -2,18 +2,14 @@
   position: relative;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   @mixin atMedium {
     &--align-center {
       align-items: center;
     }
 
     &--gutters {
-      margin-left: -35px;
-    }
-
-    &--gutters > &__item {
-      padding-left: 35px;
+      margin-left: -36px;
     }
 
     &__item-half {
@@ -43,6 +39,17 @@
 
     &__item-half:first-child {
       margin-right: 64px;
+    }
+
+    &__item--feature-item {
+      flex: 0 0 33%;
+      margin-top: 2rem;
+      padding: 15px 25px;
+      transition: box-shadow 450ms;
+    }
+
+    &__item--feature-item:hover {
+      box-shadow: rgba(46, 46, 61, 0.24) 0px 24px 64px 0px;
     }
 
     &__item-4 {
