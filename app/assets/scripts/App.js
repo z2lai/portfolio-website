@@ -1,5 +1,6 @@
 import MobileMenu from "./modules/MobileMenu";
 import RevealOnScroll from "./modules/RevealOnScroll";
+import TechFeatures from "./modules/TechFeatures";
 import { particles, ParticlesOverlay } from "./modules/particles";
 import { config } from "./modules/particlesjs-config";
 import toggleHeader from "./modules/toggleHeader";
@@ -23,6 +24,7 @@ const particlesOverlay = new ParticlesOverlay("banner", "banner-overlay");
 // );
 const mobileMenu = new MobileMenu();
 const revealOnScroll = new RevealOnScroll();
+const projectOneTech = new TechFeatures("p1-tech-list", "p1-feature-list");
 
 var elem = document.getElementById("repulse-div");
 var pos_x = elem.offsetLeft,

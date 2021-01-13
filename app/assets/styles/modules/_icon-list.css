@@ -21,6 +21,10 @@
     }
   }
 
+  &__icon use {
+    pointer-events: none;
+  }
+
   &__icon:hover {
     filter: saturate(1);
   }

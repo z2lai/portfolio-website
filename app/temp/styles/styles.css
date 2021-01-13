@@ -691,7 +691,7 @@ ul {
     overflow: visible;
     padding-left: 24px;
     padding-right: 24px;
-    max-width: 1236px;
+    max-width: 1280px;
     margin: auto;
 }
 
@@ -843,9 +843,9 @@ ul {
   padding: calc(26px / var(--size-divisor));
   background: #fdfdfd;
   -webkit-box-shadow: inset 0 0 calc(11px / var(--size-divisor)) 0 black,
-    rgba(46, 46, 61, 0.24) 0 calc(24px / var(--size-divisor)) calc(32px / var(--size-divisor)) 0;
+    0 24px 64px 0 rgba(46, 46, 61, 0.24);
           box-shadow: inset 0 0 calc(11px / var(--size-divisor)) 0 black,
-    rgba(46, 46, 61, 0.24) 0 calc(24px / var(--size-divisor)) calc(32px / var(--size-divisor)) 0;
+    0 24px 64px 0 rgba(46, 46, 61, 0.24);
   border-radius: calc(66px / var(--size-divisor));
 }
 
@@ -1325,84 +1325,86 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media (min-width: 800px) {
-    .flex-row--align-center {
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
     }
 
-    .flex-row--gutters {
-      margin-left: -36px;
-    }
+.flex-row--align-center {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 
-    .flex-row__item-half {
-      -webkit-box-flex: 0;
-          -ms-flex: none;
-              flex: none;
-    }
+.flex-row--gutters {
+    margin-left: -36px;
+  }
 
-    .flex-row__item-half--extra-small {
-      width: 408px;
-    }
+.flex-row__item-half {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
 
-    .flex-row__item-half--small {
-      width: 478px;
-    }
+.flex-row__item-half--extra-small {
+    width: 408px;
+  }
 
-    .flex-row__item-half--large {
-      width: 538px;
-    }
+.flex-row__item-half--small {
+    width: 478px;
+  }
 
-    .flex-row__item-half--extra-large {
-      width: 608px;
-    }
+.flex-row__item-half--large {
+    width: 538px;
+  }
 
-    .flex-row__item-half img {
-      width: 100%;
-      height: auto;
-    }
+.flex-row__item-half--extra-large {
+    width: 608px;
+  }
 
-    .flex-row__item-half:first-child {
-      margin-right: 64px;
-    }
+.flex-row__item-half img {
+    width: 100%;
+    height: auto;
+  }
 
-    .flex-row__item--feature-item {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 33%;
-              flex: 0 0 33%;
-      margin-top: 2rem;
-      padding: 15px 25px;
-      -webkit-transition: -webkit-box-shadow 450ms;
-      transition: -webkit-box-shadow 450ms;
-      transition: box-shadow 450ms;
-      transition: box-shadow 450ms, -webkit-box-shadow 450ms;
-    }
+.flex-row__item-half:first-child {
+    margin-right: 64px;
+  }
 
-    .flex-row__item--feature-item:hover {
-      -webkit-box-shadow: rgba(46, 46, 61, 0.24) 0px 24px 64px 0px;
-              box-shadow: rgba(46, 46, 61, 0.24) 0px 24px 64px 0px;
-    }
+.flex-row__item--feature-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.3%;
+            flex: 0 0 33.3%;
+    margin-top: 2rem;
+    padding: 18px 28px;
+    -webkit-transition: opacity 450ms, -webkit-box-shadow 450ms;
+    transition: opacity 450ms, -webkit-box-shadow 450ms;
+    transition: box-shadow 450ms, opacity 450ms;
+    transition: box-shadow 450ms, opacity 450ms, -webkit-box-shadow 450ms;
+  }
 
-    .flex-row__item-4 {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 33%;
-              flex: 0 0 33%;
-    }
+.flex-row__item--feature-item:hover, .flex-row__item--feature-item.is-active {
+    -webkit-box-shadow: rgba(46, 46, 61, 0.24) 0px 24px 64px 0px;
+            box-shadow: rgba(46, 46, 61, 0.24) 0px 24px 64px 0px;
+  }
 
-    .flex-row__item-full {
-      -webkit-box-flex: 1;
-          -ms-flex: 1 1 100%;
-              flex: 1 1 100%;
-    }
-    }
+.flex-row__item--feature-item.is-inactive {
+    opacity: 0.5;
+  }
 
-.flex-row--centered {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+.flex-row__item-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33%;
+            flex: 0 0 33%;
+  }
+
+.flex-row__item-full {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
   }
 
 .flex-column {
@@ -1784,6 +1786,10 @@ ul {
 
 @media (min-width: 530px) {
     }
+
+.icon-list__icon use {
+    pointer-events: none;
+  }
 
 .icon-list__icon:hover {
     -webkit-filter: saturate(1);

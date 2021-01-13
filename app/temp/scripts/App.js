@@ -10338,11 +10338,15 @@ var _RevealOnScroll = __webpack_require__(3);
 
 var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
 
-var _particles = __webpack_require__(4);
+var _TechFeatures = __webpack_require__(4);
 
-var _particlesjsConfig = __webpack_require__(5);
+var _TechFeatures2 = _interopRequireDefault(_TechFeatures);
 
-var _toggleHeader = __webpack_require__(6);
+var _particles = __webpack_require__(5);
+
+var _particlesjsConfig = __webpack_require__(6);
+
+var _toggleHeader = __webpack_require__(7);
 
 var _toggleHeader2 = _interopRequireDefault(_toggleHeader);
 
@@ -10365,6 +10369,7 @@ var particlesOverlay = new _particles.ParticlesOverlay("banner", "banner-overlay
 // );
 var mobileMenu = new _MobileMenu2.default();
 var revealOnScroll = new _RevealOnScroll2.default();
+var projectOneTech = new _TechFeatures2.default("p1-tech-list", "p1-feature-list");
 
 var elem = document.getElementById("repulse-div");
 var pos_x = elem.offsetLeft,
@@ -10454,6 +10459,73 @@ exports.default = RevealOnScroll;
 
 /***/ }),
 /* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var TechFeatures = function () {
+  function TechFeatures(iconListID, featureListID) {
+    _classCallCheck(this, TechFeatures);
+
+    this.iconList = document.getElementById(iconListID);
+    this.featureList = document.getElementById(featureListID);
+    this.features = this.featureList ? Array.from(this.featureList.getElementsByClassName("js-feature")) : null;
+    this.highlightedTech = "";
+    this.events();
+  }
+
+  _createClass(TechFeatures, [{
+    key: "events",
+    value: function events() {
+      this.iconList.addEventListener("mouseover", this.setHighlightedTech.bind(this));
+      this.iconList.addEventListener("mouseleave", this.resetFeatures.bind(this));
+    }
+  }, {
+    key: "setHighlightedTech",
+    value: function setHighlightedTech(event) {
+      var highlightedTech = event.target.dataset.tech || "";
+      if (highlightedTech === this.highlightedTech) return;
+
+      this.highlightedTech = highlightedTech;
+      console.log("Highlighted Tech: " + this.highlightedTech);
+      if (this.features.length > 0) this.updateFeatures();
+    }
+  }, {
+    key: "updateFeatures",
+    value: function updateFeatures() {
+      this.resetFeatures();
+      if (!this.highlightedTech) return;
+
+      var activeClassName = "js-feature--" + this.highlightedTech;
+      this.features.forEach(function (feature) {
+        if (feature.classList.contains(activeClassName)) feature.classList.add("is-active");else feature.classList.add("is-inactive");
+      });
+    }
+  }, {
+    key: "resetFeatures",
+    value: function resetFeatures() {
+      this.features.forEach(function (feature) {
+        return feature.classList.remove("is-active", "is-inactive");
+      });
+    }
+  }]);
+
+  return TechFeatures;
+}();
+
+exports.default = TechFeatures;
+
+/***/ }),
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11870,7 +11942,7 @@ var ParticlesOverlay = exports.ParticlesOverlay = function () {
 // };
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11996,7 +12068,7 @@ var config = exports.config = {
 };
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
