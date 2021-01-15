@@ -10369,7 +10369,7 @@ var particlesOverlay = new _particles.ParticlesOverlay("banner", "banner-overlay
 // );
 var mobileMenu = new _MobileMenu2.default();
 var revealOnScroll = new _RevealOnScroll2.default();
-var projectOneTech = new _TechFeatures2.default("p1-tech-list", "p1-feature-list");
+var projectOneTech = new _TechFeatures2.default("p1-tech-icons", "p1-tech-features");
 
 var elem = document.getElementById("repulse-div");
 var pos_x = elem.offsetLeft,
@@ -12046,7 +12046,7 @@ var config = exports.config = {
         }
       },
       "bubble": {
-        "distance": 225,
+        "distance": 215,
         "size": 4,
         "duration": 0.5,
         "opacity": 1,

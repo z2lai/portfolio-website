@@ -1,7 +1,13 @@
 .generic-content-container {
-  @mixin atSmall {
+  p {
     font-size: 1.125rem;
     line-height: 1.625;
+    margin: 0.4em 0;
+    font-weight: 400;
+  }
+
+  p a {
+    font-weight: 700;
   }
 
   &--medium {
@@ -17,14 +23,5 @@
 
   &--overlay {
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
-  }
-
-  p {
-    margin: 0.4em 0;
-    font-weight: 400;
-  }
-
-  p a {
-    font-weight: 700;
   }
 }
