@@ -11,10 +11,6 @@
     align-items: center;
   }
 
-  &--gutters {
-    margin-left: -36px;
-  }
-
   &__item-half {
     flex: none;
   }
@@ -44,26 +40,12 @@
     margin-right: 64px;
   }
 
-  &__item--feature-item {
+  &__item--4 {
     flex: 0 0 33.3%;
     margin-top: 2rem;
-    padding: 18px 28px;
-    transition: box-shadow 450ms, opacity 450ms;
   }
 
-  &__item--feature-item:hover, &__item--feature-item.is-active {
-    box-shadow: rgba(46, 46, 61, 0.24) 0px 24px 64px 0px;
-  }
-
-  &__item--feature-item.is-inactive {
-    opacity: 0.5;
-  }
-
-  &__item-4 {
-    flex: 0 0 33%;
-  }
-
-  &__item-full {
+  &__item--full {
     flex: 1 1 100%;
   }
 }

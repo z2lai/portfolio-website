@@ -93,7 +93,7 @@ export const config = {
         }
       },
       "bubble": {
-        "distance": 225,
+        "distance": 215,
         "size": 4,
         "duration": 0.5,
         "opacity": 1,
