@@ -2,7 +2,7 @@
   p {
     font-size: 1.125rem;
     line-height: 1.625;
-    margin: 0.4em 0;
+    margin: 0.2em 0;
     font-weight: 400;
   }
 
@@ -11,9 +11,11 @@
   }
 
   &--medium {
-    @mixin atSmall {
-      font-size: 1.25rem;
-      line-height: 1.5;
+    p {
+      @mixin atSmall {
+        font-size: 1.25rem;
+        line-height: 1.5;
+      }
     }
   }
 

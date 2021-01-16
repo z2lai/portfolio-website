@@ -1498,7 +1498,7 @@ ul {
 .generic-content-container p {
     font-size: 1.125rem;
     line-height: 1.625;
-    margin: 0.4em 0;
+    margin: 0.2em 0;
     font-weight: 400;
   }
 
@@ -1508,10 +1508,10 @@ ul {
 
 @media (min-width: 530px) {
 
-.generic-content-container--medium {
-      font-size: 1.25rem;
-      line-height: 1.5
-  }
+.generic-content-container--medium p {
+        font-size: 1.25rem;
+        line-height: 1.5
+    }
     }
 
 .generic-content-container--center {
@@ -1700,6 +1700,7 @@ ul {
 
 .link {
   margin-right: 1rem;
+  font-size: 1.125rem;
   line-height: 1.65;
   font-weight: 500;
   color: #D59541;
@@ -1710,10 +1711,6 @@ ul {
     }
 
 .link:hover {
-  }
-
-.link--large {
-    font-size: 1.25rem;
   }
 
 .link__icon {
@@ -1772,7 +1769,7 @@ ul {
   }
 
 .feature {
-  padding: 10px 28px;
+  padding: 14px 26px;
   -webkit-transition: opacity 450ms, -webkit-box-shadow 450ms;
   transition: opacity 450ms, -webkit-box-shadow 450ms;
   transition: box-shadow 450ms, opacity 450ms;
@@ -1814,7 +1811,7 @@ ul {
     font-size: 1.125rem;
     font-weight: 600;
     text-align: left;
-    margin: 0.4em 0 0.2em 0;
+    margin: 0.4em 0;
     color: #2E3842;
   }
 
