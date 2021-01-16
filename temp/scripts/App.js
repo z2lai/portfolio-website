@@ -10369,7 +10369,8 @@ var particlesOverlay = new _particles.ParticlesOverlay("banner", "banner-overlay
 // );
 var mobileMenu = new _MobileMenu2.default();
 var revealOnScroll = new _RevealOnScroll2.default();
-var projectOneTech = new _TechFeatures2.default("p1-tech-icons", "p1-tech-features");
+var projectOneFeatures = new _TechFeatures2.default("p1-tech-icons", "p1-tech-features");
+var projectTwoFeatures = new _TechFeatures2.default("p2-tech-icons", "p2-tech-features");
 
 var elem = document.getElementById("repulse-div");
 var pos_x = elem.offsetLeft,

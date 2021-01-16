@@ -24,7 +24,8 @@ const particlesOverlay = new ParticlesOverlay("banner", "banner-overlay");
 // );
 const mobileMenu = new MobileMenu();
 const revealOnScroll = new RevealOnScroll();
-const projectOneTech = new TechFeatures("p1-tech-icons", "p1-tech-features");
+const projectOneFeatures = new TechFeatures("p1-tech-icons", "p1-tech-features");
+const projectTwoFeatures = new TechFeatures("p2-tech-icons", "p2-tech-features");
 
 var elem = document.getElementById("repulse-div");
 var pos_x = elem.offsetLeft,
