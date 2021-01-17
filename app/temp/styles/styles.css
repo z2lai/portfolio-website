@@ -1792,7 +1792,8 @@ ul {
   }
 
 .feature__item--icon {
-    padding-left: 3.25em;
+    padding-left: 3.375em;
+    padding-top: 0.3em;
   }
 
 .feature__item--iconless {
@@ -1803,15 +1804,21 @@ ul {
     display: block;
     position: absolute;
     left: 0;
-    width: 2.125em;
-    height: 2.125em;
+    top: 0;
+    width: 2.5em;
+    height: 2.5em;
+    stroke-width: 1.5;
+    stroke-linecap: round; 
+    stroke-linejoin: round;
+    stroke: #D59541;
+    fill: none;
   }
 
 .feature__title {
     font-size: 1.125rem;
     font-weight: 600;
     text-align: left;
-    margin: 0.4em 0;
+    margin: 0 0 0.4em 0;
     color: #2E3842;
   }
 
