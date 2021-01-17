@@ -1595,6 +1595,10 @@ ul {
   }
     }
 
+.subsection--inline {
+    margin-top: 1rem;
+  }
+
 .subsection--divider::before {
     content: "";
     position: relative;
@@ -1807,10 +1811,11 @@ ul {
     top: 0;
     width: 2.5em;
     height: 2.5em;
+    color: #D59541;
     stroke-width: 1.5;
     stroke-linecap: round; 
     stroke-linejoin: round;
-    stroke: #D59541;
+    stroke: currentColor;
     fill: none;
   }
 

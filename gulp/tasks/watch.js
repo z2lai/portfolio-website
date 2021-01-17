@@ -2,7 +2,6 @@ var gulp = require('gulp'),
 browserSync = require('browser-sync').create();
 
 gulp.task('watch', function() {
-
     /* Setting up internal web server to serve our website located in app folder. The result
     is the website gets opened in the browser with an internal URL.
     1) BrowserSync enables page refresh or CSS injection into the page with tasks.
@@ -12,7 +11,7 @@ gulp.task('watch', function() {
       through your network. This external URL will be displayed in the command line beside "External:",
       which you can type into your mobile device to access. */
     browserSync.init({
-      notify: false, // hides css injection notification in top right corner
+      notify: true, // hides css injection notification in top right corner
       server: {
         baseDir: "app"
       }
