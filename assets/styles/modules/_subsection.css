@@ -22,6 +22,10 @@
     }
   }
 
+  &--inline {
+    margin-top: 1rem;
+  }
+
   &--divider::before {
     content: "";
     position: relative;

@@ -32,10 +32,11 @@
     top: 0;
     width: 2.5em;
     height: 2.5em;
+    color: $mainOrange;
     stroke-width: 1.5;
     stroke-linecap: round; 
     stroke-linejoin: round;
-    stroke: $mainOrange;
+    stroke: currentColor;
     fill: none;
   }
 
