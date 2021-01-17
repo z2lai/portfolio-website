@@ -62,14 +62,15 @@
       </div>
 
       <div class="flex-row flex-row--align-center subsection subsection--narrow">
-        <div
-          class="flex-row__item-half flex-row__item-half--small generic-content-container generic-content-container">
+        <div class="flex-row__item-half flex-row__item-half--small generic-content-container generic-content-container">
           <h3 class="subsection-title subsection-title--grey">
             React Multi-step Form Library
           </h3>
           <p>
-            A React library for developers to easily create interactive multi-step forms using declarative code. Inputs are
-            displayed on separate "pages" and input values are automatically made available for form validation and submission through custom hooks and the Context API.
+            A React library for developers to easily create interactive multi-step forms using declarative code. Form
+            inputs are
+            displayed on separate "pages" and input values are automatically made available for form validation and
+            submission through custom hooks and the Context API.
           </p>
           <a href="https://github.com/z2lai/react-emotion-multi-step-form" class="link">
             <svg class="link__icon">
@@ -113,10 +114,12 @@
         <div id="p1-tech-features" class="flex-row generic-content-container">
           <div class="flex-row__item flex-row__item--4 feature js-feature js-feature--react">
             <div class="feature__item feature__item--icon">
-              <img class="feature__icon" src="assets/icons/rain.svg">
+              <svg class="feature__icon">
+                <use xlink:href="assets/icons/symbol-defs.svg#icon-cog"></use>
+              </svg>
               <h5 class="feature__title">Declarative Configuration</h5>
               <p>
-                Input components are implemented using custom hooks and compound components pattern to allow the user
+                Implemented input components using custom hooks and compound components pattern to allow the user
                 to configure the inputs declaratively.
               </p>
             </div>
@@ -124,54 +127,64 @@
 
           <div class="flex-row__item flex-row__item--4 feature js-feature js-feature--html5">
             <div class="feature__item feature__item--icon">
-              <img class="feature__icon" src="assets/icons/rain.svg">
+              <svg class="feature__icon">
+                <use xlink:href="assets/icons/symbol-defs.svg#icon-file-alert"></use>
+              </svg>
               <h5 class="feature__title">HTML5 Form Validation</h5>
               <p>
-                Input validation is aligned with the HTML5 standard through the Constraint Validation API to conform to user expectation. Validation logic and error messages can also be customized.
+                Aligned input validation with the HTML5 standard through the Constraint Validation API to conform to
+                user expectation. Validation logic and error messages can also be customized.
               </p>
             </div>
           </div>
 
           <div class="flex-row__item flex-row__item--4 feature js-feature js-feature--css3">
             <div class="feature__item feature__item--icon">
-              <img class="feature__icon" src="assets/icons/rain.svg">
+              <svg class="feature__icon">
+                <use xlink:href="assets/icons/symbol-defs.svg#icon-animation"></use>
+              </svg>
               <h5 class="feature__title">Optimized Animations</h5>
               <p>
-                Page transition animations are optimized (60 FPS) for a smooth interactive experience by avoiding reflow and using a custom hook which creates scaling animations for each page.
+                Optimized page transition animations (60 FPS) for a smooth interactive experience by avoiding reflow and
+                creating a custom hook to generate scaling animations for each page.
               </p>
             </div>
           </div>
 
           <div class="flex-row__item flex-row__item--4 feature js-feature js-feature--react">
             <div class="feature__item feature__item--icon">
-              <img class="feature__icon" src="assets/icons/rain.svg">
+              <svg class="feature__icon">
+                <use xlink:href="assets/icons/symbol-defs.svg#icon-site-map"></use>
+              </svg>
               <h5 class="feature__title">Form State Management</h5>
               <p>
-                Form state management is optimized through techniques such as state colocation and logically separated contexts which minimizes the number of unnecessary renders.
+                Optimized form state management through techniques such as state colocation and logically separated
+                contexts which minimizes the number of unnecessary renders.
               </p>
             </div>
           </div>
 
           <div class="flex-row__item flex-row__item--4 feature js-feature js-feature--html5">
             <div class="feature__item feature__item--icon">
-              <img class="feature__icon" src="assets/icons/rain.svg">
-              <h5 class="feature__title">Accessible Keyboard events</h5>
+              <svg class="feature__icon">
+                <use xlink:href="assets/icons/symbol-defs.svg#icon-keyboard"></use>
+              </svg>
+              <h5 class="feature__title">Accessible Keyboard Events</h5>
               <p>
-                Form state management is a common problem that I wanted to solve using concepts such as state colocation
-                and logically
-                separated contexts, I've minimized the number of unnecessary renders.
+                Implemented keyboard event handling to allow for seamless and accessible navigation through all inputs
+                and form pages.
               </p>
             </div>
           </div>
 
           <div class="flex-row__item flex-row__item--4 feature js-feature js-feature--css3">
             <div class="feature__item feature__item--icon">
-              <img class="feature__icon" src="assets/icons/rain.svg">
+              <svg class="feature__icon">
+                <use xlink:href="assets/icons/symbol-defs.svg#icon-devices"></use>
+              </svg>
               <h5 class="feature__title">Responsive Design</h5>
               <p>
-                Form state management is a common problem that I wanted to solve using concepts such as state colocation
-                and logically
-                separated contexts, I've minimized the number of unnecessary renders.
+                Designed form components to be responsive and adjust automatically to fit any viewport size.
               </p>
             </div>
           </div>
@@ -184,8 +197,9 @@
           Lesson Learnt
         </h4>
         <p>
-          I built a React library for users to easily create interactive multi-step forms using declarative code. The
-          library handles form state management using the Context API, custom hooks and custom input components.
+          The more a component inverts control, the more flexible it becomes. However, in order to build a robust and
+          reusable library, one has to focus on solving one problem and solving it well, just like when creating a
+          function.
         </p>
       </div>
 
@@ -197,9 +211,7 @@
               Portfolio Website
             </h3>
             <p>
-              A single page website for potential employers to glance over my best projects and my background with
-              minimal
-              navigation.
+              A single page website for potential employers to quickly glance over my best projects and my background.
             </p>
             <a href="https://github.com/z2lai/portfolio-website" class="link">
               <svg class="link__icon">
@@ -240,7 +252,8 @@
             </ul>
 
             <div id="p2-tech-features" class="flex-row generic-content-container">
-              <div class="flex-row__item flex-row__item--full feature js-feature js-feature--gulp js-feature--browsersync">
+              <div
+                class="flex-row__item flex-row__item--full feature js-feature js-feature--gulp js-feature--browsersync">
                 <div class="feature__item feature__item--iconless">
                   <h5 class="feature__title">Automated Workflow</h5>
                   <p>
@@ -312,8 +325,7 @@
 
   <section id="about" class="page-section page-section--about">
     <div class="wrapper wrapper--no-padding-until-medium">
-      <div
-        class="generic-content-container generic-content-container--center generic-content-container--overlay">
+      <div class="generic-content-container generic-content-container--center generic-content-container--overlay">
         <h2 class="section-title section-title--white">About</h2>
         <p>
           My background and experience.

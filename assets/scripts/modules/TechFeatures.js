@@ -14,7 +14,7 @@ class TechFeatures {
       "mouseover",
       this.setHighlightedTech.bind(this)
     );
-    this.iconList.addEventListener("mouseleave", this.resetFeatures.bind(this));
+    this.iconList.addEventListener("mouseleave", this.resetHighlightedTech.bind(this));
   }
 
   setHighlightedTech(event) {
@@ -24,6 +24,11 @@ class TechFeatures {
     this.highlightedTech = highlightedTech;
     console.log(`Highlighted Tech: ${this.highlightedTech}`);
     if (this.features.length > 0) this.updateFeatures();
+  }
+
+  resetHighlightedTech(event) {
+    this.highlightedTech = "";
+    this.resetFeatures();
   }
 
   updateFeatures() {

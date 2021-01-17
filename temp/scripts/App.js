@@ -10488,7 +10488,7 @@ var TechFeatures = function () {
     key: "events",
     value: function events() {
       this.iconList.addEventListener("mouseover", this.setHighlightedTech.bind(this));
-      this.iconList.addEventListener("mouseleave", this.resetFeatures.bind(this));
+      this.iconList.addEventListener("mouseleave", this.resetHighlightedTech.bind(this));
     }
   }, {
     key: "setHighlightedTech",
@@ -10499,6 +10499,12 @@ var TechFeatures = function () {
       this.highlightedTech = highlightedTech;
       console.log("Highlighted Tech: " + this.highlightedTech);
       if (this.features.length > 0) this.updateFeatures();
+    }
+  }, {
+    key: "resetHighlightedTech",
+    value: function resetHighlightedTech(event) {
+      this.highlightedTech = "";
+      this.resetFeatures();
     }
   }, {
     key: "updateFeatures",
