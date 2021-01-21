@@ -10352,32 +10352,21 @@ var _toggleHeader2 = _interopRequireDefault(_toggleHeader);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-window.addEventListener("load", function () {
-  console.log("Window loaded!");
+window.addEventListener('load', function () {
+  console.log('Window loaded!');
   window.setTimeout(function () {
-    document.getElementById("banner").classList.remove("large-hero--is-preload");
+    document.getElementById('banner').classList.remove('large-hero--is-preload');
   }, 100);
 });
 
-window.addEventListener("scroll", _toggleHeader2.default);
+window.addEventListener('scroll', _toggleHeader2.default);
 
-(0, _particles.particles)("banner", _particlesjsConfig.config);
-var particlesOverlay = new _particles.ParticlesOverlay("banner", "banner-overlay");
-// const particlesOverlayButton = new ParticlesOverlay(
-//   "banner",
-//   "banner-overlay-button"
-// );
+(0, _particles.particles)('banner', _particlesjsConfig.config);
+var particlesOverlay = new _particles.ParticlesOverlay('banner', 'banner-overlay');
 var mobileMenu = new _MobileMenu2.default();
 var revealOnScroll = new _RevealOnScroll2.default();
-var projectOneFeatures = new _TechFeatures2.default("p1-tech-icons", "p1-tech-features");
-var projectTwoFeatures = new _TechFeatures2.default("p2-tech-icons", "p2-tech-features");
-
-var elem = document.getElementById("repulse-div");
-var pos_x = elem.offsetLeft,
-    pos_y = elem.offsetTop + elem.offsetHeight / 2,
-    div_width = elem.offsetWidth / 2;
-
-console.log(pos_x, pos_y, div_width);
+var projectOneFeatures = new _TechFeatures2.default('p1-tech-icons', 'p1-tech-features');
+var projectTwoFeatures = new _TechFeatures2.default('p2-tech-icons', 'p2-tech-features');
 
 /***/ }),
 /* 2 */
