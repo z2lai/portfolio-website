@@ -2,7 +2,7 @@
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
   @mixin atMedium {
-    margin-top: 5rem;
+    margin-top: 4rem;
     margin-bottom: 5rem;
   }
 
