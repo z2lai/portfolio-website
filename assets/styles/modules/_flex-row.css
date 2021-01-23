@@ -12,6 +12,7 @@
   }
 
   &__item-half {
+    position: relative;
     flex: none;
   }
 

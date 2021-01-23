@@ -800,8 +800,9 @@ ul {
     }
 
 .marvel-device {
+  position: absolute;
+  right: 0;
   display: inline-block;
-  position: relative;
   -webkit-box-sizing: content-box !important;
           box-sizing: content-box !important;
 }
@@ -1339,6 +1340,7 @@ ul {
   }
 
 .flex-row__item-half {
+    position: relative;
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
