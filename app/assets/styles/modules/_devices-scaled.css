@@ -6,8 +6,9 @@
 }
 
 .marvel-device {
+  position: absolute;
+  right: 0;
   display: inline-block;
-  position: relative;
   box-sizing: content-box !important;
 }
 .marvel-device .screen {
