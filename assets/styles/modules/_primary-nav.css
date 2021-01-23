@@ -1,6 +1,5 @@
 .primary-nav {
   display: flex;
-  padding: 1rem 0;
   align-items: center;
   justify-content: center;
   @mixin atMedium {
@@ -10,6 +9,8 @@
 
   ul {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -17,7 +18,6 @@
 
   li {
     list-style-type: none;
-    margin: 0 0.5rem;
     @mixin atMedium {
       margin: 0 1rem;
     }
@@ -39,7 +39,7 @@
   }
 
   a::before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -2px;
     left: 0;

@@ -5,6 +5,8 @@ import { particles, ParticlesOverlay } from './modules/particles';
 import { config } from './modules/particlesjs-config';
 import toggleHeader from './modules/toggleHeader';
 
+import isMobileDevice from './utils/isMobileDevice';
+
 window.addEventListener('load', function () {
   console.log('Window loaded!');
   window.setTimeout(function () {
@@ -16,10 +18,12 @@ window.addEventListener('load', function () {
 
 window.addEventListener('scroll', toggleHeader);
 
-particles('banner', config);
-const particlesOverlay = new ParticlesOverlay('banner', 'banner-overlay');
-const mobileMenu = new MobileMenu();
-const revealOnScroll = new RevealOnScroll();
+if (!isMobileDevice()) {
+  particles('banner', config);
+  const particlesOverlay = new ParticlesOverlay('banner', 'banner-overlay');
+}
+// const mobileMenu = new MobileMenu();
+// const revealOnScroll = new RevealOnScroll();
 const projectOneFeatures = new TechFeatures(
   'p1-tech-icons',
   'p1-tech-features'

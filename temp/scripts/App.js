@@ -10350,6 +10350,10 @@ var _toggleHeader = __webpack_require__(7);
 
 var _toggleHeader2 = _interopRequireDefault(_toggleHeader);
 
+var _isMobileDevice = __webpack_require__(8);
+
+var _isMobileDevice2 = _interopRequireDefault(_isMobileDevice);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 window.addEventListener('load', function () {
@@ -10361,10 +10365,12 @@ window.addEventListener('load', function () {
 
 window.addEventListener('scroll', _toggleHeader2.default);
 
-(0, _particles.particles)('banner', _particlesjsConfig.config);
-var particlesOverlay = new _particles.ParticlesOverlay('banner', 'banner-overlay');
-var mobileMenu = new _MobileMenu2.default();
-var revealOnScroll = new _RevealOnScroll2.default();
+if (!(0, _isMobileDevice2.default)()) {
+  (0, _particles.particles)('banner', _particlesjsConfig.config);
+  var particlesOverlay = new _particles.ParticlesOverlay('banner', 'banner-overlay');
+}
+// const mobileMenu = new MobileMenu();
+// const revealOnScroll = new RevealOnScroll();
 var projectOneFeatures = new _TechFeatures2.default('p1-tech-icons', 'p1-tech-features');
 var projectTwoFeatures = new _TechFeatures2.default('p2-tech-icons', 'p2-tech-features');
 
@@ -12085,6 +12091,22 @@ var toggleHeader = function toggleHeader() {
 };
 
 exports.default = toggleHeader;
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+function isMobileDevice() {
+  return typeof window.orientation !== 'undefined' || navigator.userAgent.indexOf('IEMobile') !== -1;
+}
+
+exports.default = isMobileDevice;
 
 /***/ })
 /******/ ]);
