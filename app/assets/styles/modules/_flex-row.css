@@ -38,7 +38,9 @@
   }
 
   &__item-half:first-child {
-    margin-right: 64px;
+    @mixin atMedium {
+      margin-right: 64px;
+    }
   }
 
   &__item--4 {
