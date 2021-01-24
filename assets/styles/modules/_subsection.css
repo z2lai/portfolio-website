@@ -26,6 +26,10 @@
     margin-top: 1rem;
   }
 
+  &--about {
+    margin-top: calc(4rem + 80px);
+  }
+
   &--divider::before {
     content: "";
     position: relative;
