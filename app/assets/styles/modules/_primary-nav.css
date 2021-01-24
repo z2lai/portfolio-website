@@ -1,6 +1,5 @@
 .primary-nav {
   @mixin atMedium {
-    margin-right: 1.5rem;
   }
 
   ul {
@@ -23,7 +22,6 @@
   a {
     position: relative;
     font-size: 0.9rem;
-    letter-spacing: 0.2em;
     font-weight: 300;
     color: #fff;
     text-transform: uppercase;
@@ -31,6 +29,7 @@
     text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
     @mixin atSmall {
       font-size: 1rem;
+      letter-spacing: 0.2em;
     }
   }
 

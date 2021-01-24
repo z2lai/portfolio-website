@@ -41,7 +41,7 @@
     top: 25%;
     left: 50%;
     transform: translateX(-50%);
-    width: 368px;
+    width: 360px;
     border-radius: 50%;
     text-align: center;
     letter-spacing: 0.2em;
@@ -49,6 +49,7 @@
     z-index: 1;
     @mixin atSmall {
       top: 33%;
+      width: 392px;
     }
   }
 
