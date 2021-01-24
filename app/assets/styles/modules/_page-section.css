@@ -1,9 +1,7 @@
 .page-section {
   position: relative;
-  padding: 1.2rem 0;
-  @mixin atMedium {
-    padding: 6rem 0;
-  }
+  padding: 6rem 0;
+  overflow: hidden;
 
   &--blue {
     color: #fff;

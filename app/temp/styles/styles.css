@@ -452,7 +452,6 @@ template {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -1192,15 +1191,9 @@ ul {
 
 .page-section {
   position: relative;
-  padding: 1.2rem 0;
+  padding: 6rem 0;
+  overflow: hidden;
 }
-
-@media (min-width: 768px) {
-
-.page-section {
-    padding: 6rem 0
-}
-    }
 
 .page-section--blue {
     color: #fff;
