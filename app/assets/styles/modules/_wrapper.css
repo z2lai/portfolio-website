@@ -1,36 +1,42 @@
 .wrapper {
-    overflow: visible;
-    padding-left: 24px;
-    padding-right: 24px;
-    max-width: 1292px;
-    margin: auto;
+  overflow: visible;
+  padding-left: 24px;
+  padding-right: 24px;
+  max-width: 1280px;
+  margin: auto;
 
-    &--grey {
-      background: $mainGrey;
-    }
+  &--about {
+    padding-left: 45px;
+    padding-right: 45px;
+    max-width: 1334px;
+  }
 
-    &--medium {
-        max-width: 976px;
-    }
-    
-    &--b-margin {
-        margin-bottom: 1rem;
-        @mixin atSmall {
-            margin-bottom: 3.875rem;
-        }
-    }
+  &--grey {
+    background: $mainGrey;
+  }
 
-    &--no-padding-until-medium {
-        padding-left: 0px;
-        padding-right: 0px;  
-        @mixin atMedium {
-            padding-left: 18px;
-            padding-right: 18px;
-        }
-    }
+  &--medium {
+    max-width: 976px;
+  }
 
-    .wrapper {
-        padding-left: 0px;
-        padding-right: 0px;
+  &--b-margin {
+    margin-bottom: 1rem;
+    @mixin atSmall {
+      margin-bottom: 3.875rem;
     }
+  }
+
+  &--no-padding-until-medium {
+    padding-left: 0px;
+    padding-right: 0px;
+    @mixin atMedium {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
+  .wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
