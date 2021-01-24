@@ -23,7 +23,7 @@
 
   &--gutters > div {
     flex: 1 1 33.3%;
-    padding-right: 65px;
+    padding-right: 45px;
   }
 
   &__item-half {
