@@ -1,8 +1,8 @@
 .wrapper {
   overflow: visible;
-  padding-left: 24px;
-  padding-right: 24px;
-  max-width: 1280px;
+  padding-left: 36px;
+  padding-right: 36px;
+  max-width: 1304px;
   margin: auto;
 
   &--about {
