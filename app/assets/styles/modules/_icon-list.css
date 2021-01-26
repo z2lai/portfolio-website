@@ -8,16 +8,18 @@
 
   &__icon {
     display: inline-block;
-    margin: 0 50px;
-    width: 5rem;
-    height: 5rem;
+    margin: 0 15px;
+    width: 4rem;
+    height: 4rem;
     stroke-width: 0;
     stroke: $mainGrey;
     fill: $mainGrey;
-    filter: saturate(0);
-    transition: filter 150ms;
     @mixin atSmall {
-
+      width: 5rem;
+      height: 5rem;
+      margin: 0 50px;
+      filter: saturate(0);
+      transition: filter 150ms;
     }
   }
 

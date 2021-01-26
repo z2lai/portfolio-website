@@ -1,21 +1,30 @@
 .page-section {
   position: relative;
-  padding: 6rem 0;
-  overflow: hidden;
-
-  &--blue {
-    color: #fff;
-    background: $mainBlue;
+  padding: 5rem 0;
+  @mixin atSmall {
+    padding: 6rem 0;
   }
 
-  &--grey {
-    color: #fff;
-    background: $mainGrey;
+  &--projects::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(100% - 20px);
+    left: 0;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    line-height: 0;
+    background-image: url('/assets/shapes/section-divider.svg');
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    z-index: 1;
   }
 
   &--about {
     @mixin atMedium {
-      color: #FFFFFF;
+      color: #ffffff;
       padding-bottom: 0;
       background-color: $secondaryGrey;
       background-image: linear-gradient(
@@ -23,33 +32,11 @@
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.7)
         ),
-        url("/assets/images/high-contrast-mountain.jpg");
+        url('/assets/images/high-contrast-mountain.jpg');
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
-  }
-
-  &__custom-shape-divider {
-    position: absolute;
-    z-index: 1;
-    top: calc(100% - 20px);
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-  }
-
-  &__custom-shape-divider svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 500px;
-  }
-
-  &__custom-shape-divider .shape-fill {
-    fill: #ffffff;
   }
 }

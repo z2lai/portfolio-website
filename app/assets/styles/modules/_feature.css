@@ -1,6 +1,9 @@
 .feature {
-  padding: 14px 26px;
+  margin: 20px 0;
   transition: box-shadow 450ms, opacity 450ms;
+  @mixin atSmall {
+    padding: 14px 26px;
+  }
 
   &:hover,
   &.is-active {
