@@ -1,9 +1,13 @@
 .wrapper {
-  overflow: visible;
-  padding-left: 36px;
-  padding-right: 36px;
-  max-width: 1304px;
   margin: auto;
+  max-width: 1304px;
+  padding-left: 18px;
+  padding-right: 18px;
+  overflow: hidden;
+  @mixin atSmall {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 
   &--about {
     padding-left: 45px;

@@ -20,6 +20,7 @@
 
   &--wrap-until-small {
     flex-flow: row wrap;
+    justify-content: center;
     @mixin atSmall {
       flex-flow: row nowrap;
     }
@@ -91,7 +92,10 @@
   }
 
   &__item--4 {
-    flex: 0 0 33.3%;
+    flex: 0 0 100%;
+    @mixin atSmall {
+      flex: 0 0 33.3%;
+    }
     /* margin-top: 2rem; */
   }
 
