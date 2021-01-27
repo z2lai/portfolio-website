@@ -23,6 +23,7 @@
     justify-content: center;
     @mixin atSmall {
       flex-flow: row nowrap;
+      justify-content: flex-start;
     }
   }
 
@@ -92,11 +93,11 @@
   }
 
   &__item--4 {
+    margin-top: 2rem;
     flex: 0 0 100%;
     @mixin atSmall {
       flex: 0 0 33.3%;
     }
-    /* margin-top: 2rem; */
   }
 
   &__item--third {
@@ -105,6 +106,10 @@
   }
 
   &__item--full {
+    margin-top: 2rem;
     flex: 1 1 100%;
+    @mixin atSmall {
+      margin-top: 0;
+    }
   }
 }

@@ -92,6 +92,40 @@
   <path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" />
   <line x1="16" y1="9" x2="18" y2="9" />
 </symbol>
+<symbol id="icon-file-symlink" viewBox="0 0 24 24">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 21v-4a3 3 0 0 1 3 -3h5" />
+  <path d="M9 17l3 -3l-3 -3" />
+  <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+  <path d="M5 11v-6a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-9.5" />
+</symbol>
+<symbol id="icon-template" viewBox="0 0 24 24">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="4" y="4" width="16" height="4" rx="1" />
+  <rect x="4" y="12" width="6" height="8" rx="1" />
+  <line x1="14" y1="12" x2="20" y2="12" />
+  <line x1="14" y1="16" x2="20" y2="16" />
+  <line x1="14" y1="20" x2="20" y2="20" />
+</symbol>
+<symbol id="icon-file-code" viewBox="0 0 24 24">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+  <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+  <path d="M10 13l-1 2l1 2" />
+  <path d="M14 13l1 2l-1 2" />
+</symbol>
+<symbol id="icon-accessible" viewBox="0 0 24 24">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1" />
+  <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
+</symbol>
+<symbol id="icon-device-mobile" viewBox="0 0 24 24">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="7" y="4" width="10" height="16" rx="1" />
+  <line x1="11" y1="5" x2="13" y2="5" />
+  <line x1="12" y1="17" x2="12" y2="17.01" />
+</symbol>
 <symbol id="icon-linkedin" viewBox="0 1 32 32">
 <path d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"></path>
 <path d="M2 12h6v18h-6v-18z"></path>

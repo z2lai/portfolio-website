@@ -1,4 +1,10 @@
-Components:
+Guidelines:
+- Name Blocks, Elements and Modifier classes using Semantic Names instead of Utility Names if possible (e.g. page-section--About instead of page-section--top-margin-large)
+- Add modifiers before adding new block
+- Use wrapper classes for layout (prefixed with "l-") OR mixes where layout is controlled by parent (with a block element class) and block classes never have layout styles
+- Add block classes to HTML according to semantic structure (e.g. each article/section should have a subsection wrapper class for layout)
+
+Components/Blocks:
 - button
 - device
 - feature
@@ -15,7 +21,7 @@ Components:
 - site-footer
 - testimonials
 
-Wrappers:
+Layout Wrappers:
 - wrapper
 - flex-column
 - flex-row
