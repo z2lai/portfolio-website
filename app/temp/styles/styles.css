@@ -1206,47 +1206,112 @@ ul {
 }
     }
 
-.page-section--projects::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: calc(100% - 20px);
-    left: 0;
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-    line-height: 0;
-    background-image: url('/assets/shapes/section-divider.svg');
-    background-size: 100% 500px;
-    background-repeat: no-repeat;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    z-index: 1;
-  }
+@media (min-width: 768px) {
 
-@media (min-width: 1024px) {
+.page-section--projects::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: calc(100% - 20px);
+      left: 0;
+      width: 100%;
+      height: 380px;
+      overflow: hidden;
+      line-height: 0;
+      background-image: url('/assets/shapes/section-divider.svg');
+      background-size: 100% 380px;
+      background-repeat: no-repeat;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+      z-index: 1
+  }
+    }
+
+@media (min-width: 1200px) {
+
+.page-section--projects::after {
+      height: 500px;
+      background-size: 100% 500px
+  }
+    }
 
 .page-section--about {
-      color: #ffffff;
-      padding-bottom: 0;
-      background-color: #5E7387;
+    padding-bottom: 0;
+    color: #ffffff;
+    background-color: #5E7387;
+    background-image: -webkit-gradient(
+        linear,
+        left top, left bottom,
+        from(rgba(0, 0, 0, 0.3)),
+        to(rgba(0, 0, 0, 0.7))
+      ),
+      url('/assets/images/high-contrast-mountain-mobile.jpg');
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url('/assets/images/high-contrast-mountain-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+@media (min-width: 768px) {
+
+.page-section--about {
       background-image: -webkit-gradient(
           linear,
           left top, left bottom,
           from(rgba(0, 0, 0, 0.3)),
           to(rgba(0, 0, 0, 0.7))
         ),
-        url('/assets/images/high-contrast-mountain.jpg');
+        url('/assets/images/high-contrast-mountain-tablet-portrait.jpg');
       background-image: linear-gradient(
           to bottom,
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.7)
         ),
-        url('/assets/images/high-contrast-mountain.jpg');
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed
+        url('/assets/images/high-contrast-mountain-tablet-portrait.jpg')
+  }
+    }
+
+@media (min-width: 1024px) {
+
+.page-section--about {
+      background-image: -webkit-gradient(
+          linear,
+          left top, left bottom,
+          from(rgba(0, 0, 0, 0.3)),
+          to(rgba(0, 0, 0, 0.7))
+        ),
+        url('/assets/images/high-contrast-mountain-tablet-landscape.jpg');
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.7)
+        ),
+        url('/assets/images/high-contrast-mountain-tablet-landscape.jpg')
+  }
+    }
+
+@media (min-width: 1200px) {
+
+.page-section--about {
+      background-image: -webkit-gradient(
+          linear,
+          left top, left bottom,
+          from(rgba(0, 0, 0, 0.3)),
+          to(rgba(0, 0, 0, 0.7))
+        ),
+        url('/assets/images/high-contrast-mountain-desktop.jpg');
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.7)
+        ),
+        url('/assets/images/high-contrast-mountain-desktop.jpg')
   }
     }
 
@@ -1875,6 +1940,8 @@ ul {
     height: 160px;
     border: 6px solid rgba(255, 255, 255);
     border-radius: 80px;
+    -webkit-box-shadow: rgba(46, 46, 61, 0.24) 0px 2px 6px 0px;
+            box-shadow: rgba(46, 46, 61, 0.24) 0px 2px 6px 0px;
     background-color: rgba(255, 255, 255);
     overflow: hidden;
   }
@@ -1885,7 +1952,7 @@ ul {
 
 .testimonial__title {
     text-align: center;
-    margin: 0.5rem 0 0 0;
+    margin: 0.75rem 0 0 0;
     font-size: 1.5rem;
     font-weight: 500;
     color: #2E3842;
