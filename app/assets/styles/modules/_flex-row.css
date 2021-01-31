@@ -28,12 +28,17 @@
   }
 
   &--gutters {
-    margin-right: -45px;
+    @mixin atMedium {
+      margin-right: -45px;
+    }
   }
 
   &--gutters > div {
-    flex: 1 1 33.3%;
-    padding-right: 45px;
+    flex: 1 1 100%;
+    @mixin atMedium {
+      flex: 1 1 33.3%;
+      padding-right: 45px;
+    }
   }
 
   &__item-half {

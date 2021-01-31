@@ -4,15 +4,17 @@
   padding-left: 18px;
   padding-right: 18px;
   overflow: hidden;
-  @mixin atSmall {
+  @mixin atExtraSmall {
     padding-left: 36px;
     padding-right: 36px;
   }
 
   &--about {
-    padding-left: 45px;
-    padding-right: 45px;
     max-width: 1334px;
+    @atmixin atSmall {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
   }
 
   &--grey {
