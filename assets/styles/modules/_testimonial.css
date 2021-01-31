@@ -1,18 +1,22 @@
 .testimonial {
   position: relative;
   height: 100%;
-  padding: 80px 18px 1px 18px;
-  background-color: $lightBlue;
-  color: $secondaryGrey;
-  @mixin atMedium {
-    padding: 80px 1.8125rem 1.125rem 1.8125rem;
+  padding: 80px 18px 120px 18px;
+  /* background-color: $lightBlue; */
+  color: rgba(255, 255, 255, 0.8);
+  @mixin atSmall {
+    padding: 80px 60px 120px 60px;
     background-color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.9);
+    color: $secondaryGrey;
+  }
+  @mixin atMedium {
+    padding: 80px 1.8125rem 1.125rem 1.8125rem;
   }
 
-  &--b-margin-until-medium {
-    margin-bottom: 80px;
-    @mixin atMedium {
+  &--b-margin-until-extra-small {
+    margin-bottom: 100px;
+    @mixin atExtraSmall {
       margin-bottom: 0px;
     }
   }
@@ -39,7 +43,9 @@
     margin: 0.75rem 0 0 0;
     font-size: 1.5rem;
     font-weight: 500;
-    color: $mainGrey;
+    @mixin atSmall {
+      color: $mainGrey;
+    }
   }
 
   &__subtitle {
