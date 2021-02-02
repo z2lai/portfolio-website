@@ -710,11 +710,15 @@ ul {
 
 .wrapper--about {
     max-width: 1334px;
-    @atmixin atSmall {
-      padding-left: 45px;
-      padding-right: 45px;
-    }
   }
+
+@media (min-width: 768px) {
+
+.wrapper--about {
+      padding-left: 45px;
+      padding-right: 45px
+  }
+    }
 
 .wrapper--grey {
     background: #2E3842;
@@ -788,9 +792,16 @@ ul {
   }
 
 .button--round {
-    padding: 2rem;
     border-radius: 50%;
+    padding: 1.5rem;
   }
+
+@media (min-width: 768px) {
+
+.button--round {
+      padding: 2rem
+  }
+    }
 
 .button__icon {
     display: inline-block;
@@ -799,11 +810,40 @@ ul {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     stroke-width: 0;
     fill: currentColor;
   }
+
+@media (min-width: 768px) {
+
+.button__icon {      
+      width: 2rem;
+      height: 2rem
+  }
+    }
+
+.copyright {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  line-height: 1.5rem;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+
+.copyright {
+    margin-top: 4rem;
+    border-top: 1px solid #e2e2e9
+}
+    }
 
 :root {
   --size-divisor: 3;
@@ -1239,8 +1279,7 @@ ul {
 
 .page-section--about {
     padding-bottom: 0;
-    color: #ffffff;
-    background-color: #2E3842;
+    background-color: #E0E6EF;
     /* background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.3),
@@ -1569,9 +1608,12 @@ ul {
     text-align: center;
   }
 
+@media (min-width: 768px) {
+
 .generic-content-container--overlay {
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1)
   }
+    }
 
 .section-title {
   margin: 0;
@@ -1594,7 +1636,8 @@ ul {
   }
 
 .section-title--white {
-    color: #ffffff;
+    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.8);
   }
 
 .section-title strong {
@@ -1651,6 +1694,19 @@ ul {
     margin-top: calc(4rem + 80px);
   }
 
+.subsection--footer {
+    padding-top: 2rem;
+    margin-top: 0;
+    background-color: #2E3842;
+  }
+
+@media (min-width: 768px) {
+
+.subsection--footer {
+      background-color: initial
+  }
+    }
+
 .subsection--divider::before {
     content: '';
     display: block;
@@ -1702,7 +1758,7 @@ ul {
   margin: 0 auto 2rem auto;
   overflow: hidden;
   font-family: "Open Sans", Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   text-align: center;
   font-weight: normal;
   text-transform: uppercase;
@@ -1914,9 +1970,9 @@ ul {
   position: relative;
   height: 100%;
   padding: 80px 18px 120px 18px;
-  /* background-color: $lightBlue; */
-  color: rgba(255, 255, 255, 0.8);
 }
+
+/* color: rgba(255, 255, 255, 0.8); */
 
 @media (min-width: 768px) {
 
@@ -1928,6 +1984,8 @@ ul {
 }
     }
 
+/* background-color: $lightBlue; */
+
 @media (min-width: 1024px) {
 
 .testimonial {
@@ -1935,16 +1993,23 @@ ul {
 }
     }
 
-.testimonial--b-margin-until-extra-small {
-    margin-bottom: 100px;
+.testimonial--last {
+    padding-bottom: 0px;
   }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
 
-.testimonial--b-margin-until-extra-small {
-      margin-bottom: 0px
+.testimonial--last {
+      padding-bottom: 36px
   }
     }
+
+/* &--b-margin-until-extra-small {
+    margin-bottom: 100px;
+    @mixin atExtraSmall {
+      margin-bottom: 0px;
+    }
+  } */
 
 .testimonial__profile-picture {
     position: absolute;
@@ -1970,13 +2035,10 @@ ul {
     margin: 0.75rem 0 0 0;
     font-size: 1.5rem;
     font-weight: 500;
+    color: #2E3842;
   }
 
 @media (min-width: 768px) {
-
-.testimonial__title {
-      color: #2E3842
-  }
     }
 
 .testimonial__subtitle {
@@ -1988,19 +2050,15 @@ ul {
   }
 
 .site-footer {
-  margin: 0 auto;
-  padding: 2rem 0;
-  border-top: 1px solid #e2e2e9;
-  line-height: 1.5rem;
-  font-family: "Open Sans", Helvetica, sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.2em;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
+  overflow: auto;
+  background-color: #2E3842;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+
+.site-footer {
+    background-color: initial
+}
     }
 
 .site-header {

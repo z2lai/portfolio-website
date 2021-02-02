@@ -3,7 +3,7 @@
   height: 100%;
   padding: 80px 18px 120px 18px;
   /* background-color: $lightBlue; */
-  color: rgba(255, 255, 255, 0.8);
+  /* color: rgba(255, 255, 255, 0.8); */
   @mixin atSmall {
     padding: 80px 60px 120px 60px;
     background-color: rgb(255, 255, 255);
@@ -14,12 +14,19 @@
     padding: 80px 1.8125rem 1.125rem 1.8125rem;
   }
 
-  &--b-margin-until-extra-small {
+  &--last {
+    padding-bottom: 0px;
+    @mixin atSmall {
+      padding-bottom: 36px;
+    }
+  }
+
+  /* &--b-margin-until-extra-small {
     margin-bottom: 100px;
     @mixin atExtraSmall {
       margin-bottom: 0px;
     }
-  }
+  } */
 
   &__profile-picture {
     position: absolute;
@@ -43,8 +50,8 @@
     margin: 0.75rem 0 0 0;
     font-size: 1.5rem;
     font-weight: 500;
+    color: $mainGrey;
     @mixin atSmall {
-      color: $mainGrey;
     }
   }
 
