@@ -265,7 +265,8 @@
                   </svg>
                   <h5 class="feature__title">Automated Workflow</h5>
                   <p>
-                    Automated workflow using tools such as Gulp and Browsersync to trigger tasks on file change including
+                    Automated workflow using tools such as Gulp and Browsersync to trigger tasks on file change
+                    including
                     CSS injection or browser refresh while enabling cross browser and mobile testing.
                   </p>
                 </div>
@@ -336,17 +337,17 @@
 
   <section id="about" class="page-section page-section--about">
     <div class="wrapper wrapper--about">
-      <div class="generic-content-container generic-content-container--center generic-content-container--overlay">
-        <h2 class="section-title section-title--white">About</h2>
+      <header class="generic-content-container generic-content-container--center generic-content-container--overlay">
+        <h2 class="section-title section-title--grey">About</h2>
         <p>
           My background and experience.
         </p>
-      </div>
+      </header>
 
-      <div
+      <section
         class="subsection subsection--about flex-row flex-row--gutters generic-content-container generic-content-container--center">
         <div>
-          <div class="testimonial">
+          <article class="testimonial">
             <div class="testimonial__profile-picture">
               <img src="assets/images/customer-relationship-badge.png">
             </div>
@@ -356,11 +357,10 @@
               technology to maximize business efficiency and improve customer service. I have experience with designing
               and implementing end-to-end solutions using Oracle software such as Service Cloud, Customer Portal,
               Knowledge Advanced, and Integration Cloud.</p>
-          </div>
+          </article>
         </div>
-
         <div>
-          <div class="testimonial">
+          <article class="testimonial">
             <div class="testimonial__profile-picture">
               <img src="assets/images/data-analytics.png">
             </div>
@@ -369,12 +369,10 @@
             <p>As a business analyst, I am driven by data analysis when recommending business solutions. Moreover, I
               have developed expertise in implementing data pipelines which collect, transform and visualize data to
               reveal actionable insights.</p>
-          </div>
-
+          </article>
         </div>
-
         <div>
-          <div class="testimonial">
+          <article class="testimonial testimonial--last">
             <div class="testimonial__profile-picture">
               <img src="assets/images/idea-brain.png" height="100%">
             </div>
@@ -385,11 +383,14 @@
               looking for ways to express my creativity. As a result, I could not help but fall in love with the art of
               creating
               solutions to problems through programming.</p>
-          </div>
+          </article>
         </div>
-      </div>
+      </section>
 
-      <div id="links" class="subsection flex-column">
+    </div>
+
+    <footer class="subsection subsection--last subsection--footer">
+      <section id="links" class="flex-column wrapper wrapper--about">
         <ul class="flex-row flex-column__item">
           <li>
             <a href="https://www.linkedin.com/in/zheng-lai-9a30808b/" class="button button--round">
@@ -420,14 +421,18 @@
             </a>
           </li>
         </ul>
+
         <a href="#my-work" class="button button--large flex-column__item">Resume</a>
+      </section>
+
+      <div class="wrapper wrapper--about">
+        <p class="copyright">
+          Zheng Lai ©2021
+        </p>
       </div>
 
-      <p class="site-footer">
-        Zheng Lai ©2021
-      </p>
+    </footer>
 
-    </div>
   </section>
 
 
