@@ -98,9 +98,12 @@
   }
 
   &__item--4 {
-    margin-top: 2rem;
+    margin-top: 1.75rem;
     flex: 0 0 100%;
     @mixin atSmall {
+      flex: 0 0 50%;
+    }
+    @mixin atLarge {
       flex: 0 0 33.3%;
     }
   }

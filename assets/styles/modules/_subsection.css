@@ -31,15 +31,6 @@
     margin-top: calc(4rem + 80px);
   }
 
-  &--footer {
-    padding-top: 2rem;
-    margin-top: 0;
-    background-color: $mainGrey;
-    @mixin atSmall {
-      background-color: initial;
-    }
-  }
-
   &--divider::before {
     content: '';
     display: block;
