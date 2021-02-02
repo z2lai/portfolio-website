@@ -1,5 +1,5 @@
 .site-footer {
-  overflow: auto;
+  padding-top: 2rem;
   background-color: $mainGrey;
   @mixin atSmall {
     background-color: initial;

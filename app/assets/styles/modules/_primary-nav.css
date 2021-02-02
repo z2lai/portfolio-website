@@ -1,22 +1,14 @@
 .primary-nav {
-  @mixin atMedium {
-  }
-
   ul {
     display: flex;
     margin: 0;
     padding: 0;
-    justify-content: space-between;
-    @mixin atSmall {
-      justify-content: center;
-    }
+    justify-content: center;
   }
 
   li {
     list-style-type: none;
-    @mixin atSmall {
-      margin: 0 1rem;
-    }
+    margin: 0 1rem;
   }
 
   a {
