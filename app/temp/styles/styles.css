@@ -2060,15 +2060,19 @@ ul {
 .site-header {
   position: fixed;
   z-index: 10;
-  width: 100vw;
-  padding: 15px 0;
+  width: 100%;
+  padding: 10px 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
+
+.site-header {
+    padding: 15px 0
+}
     }
 
 .site-header--is-translucent {
-    background-color: rgba(46,56,66, 0.75);
+    background-color: rgba(46,56,66, 0.85);
   }
 
 .site-header__logo {
@@ -2078,7 +2082,7 @@ ul {
 
 .site-header__menu-content {
     position: relative;
-    padding: 0 24px;
+    padding: 0 18px;
     line-height: 1.75em;
   }
 
@@ -2088,9 +2092,9 @@ ul {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start
   }
     }
 
@@ -2203,7 +2207,7 @@ ul {
     text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
 
 .primary-nav a {
       font-size: 1rem;
