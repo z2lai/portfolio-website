@@ -3,12 +3,22 @@
   z-index: 10;
   width: 100%;
   padding: 10px 0;
+  opacity: 1;
+  transition: opacity 300ms;
   @mixin atLarge {
     padding: 15px 0;
   }
 
+  &--is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms, visibility 300ms;
+  }
+
   &--is-translucent {
-    background-color: rgba($mainGrey, 0.85);
+    opacity: 1;
+    background-color: rgba($mainGrey, 0.9);
+    transition: none;
   }
 
   &__logo {
@@ -20,10 +30,10 @@
     position: relative;
     padding: 0 18px;
     line-height: 1.75em;
-    @mixin atMedium {
+    /* @mixin atMedium {
       display: flex;
       justify-content: flex-start;
-    }
+    } */
   }
 
   &__menu-content--is-visible {
