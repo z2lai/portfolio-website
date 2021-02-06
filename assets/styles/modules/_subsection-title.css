@@ -10,12 +10,4 @@
   &--grey {
     color: $mainGrey;
   }
-
-  &--purple {
-    color: $mainPurple;
-  }
-
-  &--turqoise {
-    color: $mainTurqoise;
-  }
 }

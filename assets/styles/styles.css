@@ -9,8 +9,8 @@
 @import "modules/_iphone-x";
 @import "modules/_page-section";
 @import "modules/_frame";
-@import "modules/_flex-row";
-@import "modules/_flex-column";
+@import "modules/_l-flex-row";
+@import "modules/_l-flex-column";
 @import "modules/_generic-content-container";
 @import "modules/_section-title";
 @import "modules/_subsection";
