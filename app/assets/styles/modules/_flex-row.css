@@ -1,4 +1,4 @@
-.flex-row {
+.l-flex-row {
   position: relative;
   display: flex;
   flex-flow: row wrap;
@@ -8,10 +8,6 @@
 
   &--center {
     justify-content: center;
-  }
-
-  &--space-between {
-    justify-content: space-between;
   }
 
   &--align-center {
@@ -106,11 +102,6 @@
     @mixin atLarge {
       flex: 0 0 33.3%;
     }
-  }
-
-  &__item--third {
-    flex: 0 0 380px;
-    /* margin-top: 2rem; */
   }
 
   &__item--full {
