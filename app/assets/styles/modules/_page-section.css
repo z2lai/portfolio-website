@@ -30,7 +30,7 @@
 
   &--about {
     padding-bottom: 0;
-    background-color: $lightBlue;
+    background-color: $mainBlue;
     /* background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.3),

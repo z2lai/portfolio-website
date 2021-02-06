@@ -20,14 +20,6 @@
     color: $mainGrey;
   }
 
-  &--purple {
-    color: $mainPurple;
-  }
-
-  &--turqoise {
-    color: $mainTurqoise;
-  }
-
   &::before {
     content: "";
     position: relative;
