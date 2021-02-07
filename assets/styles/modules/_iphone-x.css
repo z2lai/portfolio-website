@@ -8,8 +8,7 @@
 .iphone-x {
   display: none;
   @mixin atMedium {
-    position: absolute;
-    right: 0;
+    position: relative;
     display: inline-block;
     box-sizing: content-box !important;
     width: calc(375px / var(--size-divisor));

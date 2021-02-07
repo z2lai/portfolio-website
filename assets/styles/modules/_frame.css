@@ -9,6 +9,7 @@
   }
 
   &--content-text {
+    max-width: 700px;
     padding: 20px 30px;
     text-align: center;
   }

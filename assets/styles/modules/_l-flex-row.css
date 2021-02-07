@@ -3,8 +3,6 @@
   display: flex;
   flex-flow: row wrap;
   align-content: center;
-  @mixin atMedium {
-  }
 
   &--center {
     justify-content: center;
@@ -15,7 +13,6 @@
   }
 
   &--wrap-until-small {
-    flex-flow: row wrap;
     justify-content: center;
     @mixin atSmall {
       flex-flow: row nowrap;
@@ -29,7 +26,7 @@
     }
   }
 
-  &--gutters > div {
+  &--gutters > * {
     flex: 1 1 100%;
     @mixin atMedium {
       flex: 1 1 33.3%;
