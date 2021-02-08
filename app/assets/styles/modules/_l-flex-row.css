@@ -34,62 +34,6 @@
     }
   }
 
-  &__item-half {
-  }
-
-  &__item-half--flex-until-small {
-    @mixin atSmall {
-      flex: none;
-    }
-  }
-
-  &__item-half--extra-small {
-    max-width: 408px;
-  }
-
-  &__item-half--small {
-    @mixin atSmall {
-      max-width: 396px;
-    }
-    @mixin atMedium {
-      max-width: 478px;
-    }
-  }
-
-  &__item-half--large {
-    margin-top: 1rem;
-    max-width: 538px;
-    @mixin atSmall {
-      margin-top: 0rem;
-    }
-  }
-
-  &__item-half--extra-large {
-    @mixin atMedium {
-      max-width: 538px;
-    }
-    @mixin atLarge {
-      max-width: 608px;
-    }
-  }
-
-  &__item-half img {
-    width: 100%;
-    height: auto;
-  }
-
-  &__item-half--right-margin-until-small {
-    @mixin atSmall {
-      margin-right: 64px;
-    }
-  }
-
-  &__item-half--right-margin-until-medium {
-    @mixin atMedium {
-      margin-right: 64px;
-    }
-  }
-
   &__item--4 {
     margin-top: 1.75rem;
     flex: 0 0 100%;

@@ -20,22 +20,6 @@
     }
   }
 
-  &--gutters-after-small > div + div {
-    margin-top: 1.5rem;
-    @mixin atSmall {
-      margin-left: 64px;
-      margin-top: 0rem;
-    }
-  }
-
-  &--gutters-after-medium > div + div {
-    margin-top: 1.5rem;
-    @mixin atMedium {
-      margin-left: 64px;
-      margin-top: 0rem;
-    }
-  }
-
   &__column {
     flex: 1 1 auto;
     max-width: 700px;
@@ -79,5 +63,21 @@
   &__column img {
     width: 100%;
     height: auto;
+  }
+
+  &--gutters-after-small > div + div {
+    margin-top: 1.5rem;
+    @mixin atSmall {
+      margin-left: 64px;
+      margin-top: 0rem;
+    }
+  }
+
+  &--gutters-after-medium > div + div {
+    margin-top: 1.5rem;
+    @mixin atMedium {
+      margin-left: 64px;
+      margin-top: 0rem;
+    }
   }
 }
