@@ -2,21 +2,35 @@
   position: relative;
   display: flex;
   max-width: 1080px;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
   @mixin atSmall {
     flex-wrap: nowrap;
-    justify-content: flex-start;
   }
 
   &--align-center {
     align-items: center;
   }
 
-  &--center-after-small {
+  &--flex-start-after-small {
     @mixin atSmall {
-      justify-content: center;
+      justify-content: flex-start;
+    }
+  }
+
+  &--gutters-after-small > * + * {
+    margin-top: 1.5rem;
+    @mixin atSmall {
+      margin-left: 64px;
+      margin-top: 0rem;
+    }
+  }
+
+  &--gutters-after-medium > * + * {
+    margin-top: 1.5rem;
+    @mixin atMedium {
+      margin-left: 64px;
+      margin-top: 0rem;
     }
   }
 
@@ -63,21 +77,5 @@
   &__column img {
     width: 100%;
     height: auto;
-  }
-
-  &--gutters-after-small > div + div {
-    margin-top: 1.5rem;
-    @mixin atSmall {
-      margin-left: 64px;
-      margin-top: 0rem;
-    }
-  }
-
-  &--gutters-after-medium > div + div {
-    margin-top: 1.5rem;
-    @mixin atMedium {
-      margin-left: 64px;
-      margin-top: 0rem;
-    }
   }
 }
