@@ -10,9 +10,7 @@ import isMobileDevice from './utils/isMobileDevice';
 window.addEventListener('load', function () {
   console.log('Window loaded!');
   window.setTimeout(function () {
-    document
-      .getElementById('banner')
-      .classList.remove('large-hero--is-preload');
+    document.getElementById('banner').classList.remove('is-preload');
   }, 100);
 });
 
