@@ -1,4 +1,4 @@
-.large-hero {
+.hero {
   position: relative;
   height: 100vh;
   overflow: hidden;
@@ -14,25 +14,6 @@
   background-attachment: fixed;
   font-family: 'Open Sans', Helvetica, sans-serif;
 
-  &--is-preload::after {
-    opacity: 1;
-  }
-
-  &--is-preload .large-hero__title,
-  &--is-preload .large-hero__description,
-  &--is-preload .large-hero__button-wrapper {
-    opacity: 0;
-  }
-
-  &--is-preload .large-hero__title {
-    transform: scale(0.95);
-  }
-
-  &--is-preload .large-hero__title::before,
-  &--is-preload .large-hero__title::after {
-    width: 0;
-  }
-
   &::after {
     content: '';
     position: absolute;
@@ -45,6 +26,25 @@
     opacity: 0;
     transition: opacity 1250ms ease-in-out 1250ms;
     pointer-events: none;
+  }
+
+  &.is-preload::after {
+    opacity: 1;
+  }
+
+  &.is-preload .hero__title,
+  &.is-preload .hero__description,
+  &.is-preload .hero__button-wrapper {
+    opacity: 0;
+  }
+
+  &.is-preload .hero__title {
+    transform: scale(0.95);
+  }
+
+  &.is-preload .hero__title::before,
+  &.is-preload .hero__title::after {
+    width: 0;
   }
 
   &__text-content {
