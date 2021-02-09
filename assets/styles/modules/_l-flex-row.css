@@ -4,12 +4,36 @@
   flex-flow: row wrap;
   align-content: center;
 
-  &--center {
-    justify-content: center;
-  }
-
   &--align-center {
     align-items: center;
+  }
+
+  &--type-margin-left-small > * + * {
+    margin-left: 1rem;
+  }
+
+  &--type-margin-sides-large {
+    justify-content: center;
+    & > * {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      @mixin atSmall {
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  &--type-margin-sides-small {
+    justify-content: center;
+    & > * {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+
+  &--type-margin-top-small > * {
+    margin-top: 1rem;
   }
 
   &--nowrap-after-medium {
