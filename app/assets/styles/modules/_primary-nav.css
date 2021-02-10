@@ -18,7 +18,7 @@
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
     @mixin atExtraSmall {
       font-size: 1rem;
       letter-spacing: 0.2em;

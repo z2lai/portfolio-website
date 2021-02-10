@@ -5,38 +5,9 @@
     padding: 6rem 0;
   }
 
-  &--projects::after {
-    @mixin atSmall {
-      content: '';
-      display: block;
-      position: absolute;
-      top: calc(100% - 20px);
-      left: 0;
-      width: 100%;
-      height: 380px;
-      overflow: hidden;
-      line-height: 0;
-      background-image: url('/assets/shapes/section-divider.svg');
-      background-size: 100% 380px;
-      background-repeat: no-repeat;
-      transform: rotate(180deg);
-      z-index: 1;
-    }
-    @mixin atLarge {
-      height: 500px;
-      background-size: 100% 500px;
-    }
-  }
-
   &--about {
     padding-bottom: 0;
     background-color: $mainBlue;
-    /* background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.7)
-      ),
-      url('/assets/images/high-contrast-mountain-mobile.jpg'); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -65,5 +36,61 @@
         ),
         url('/assets/images/high-contrast-mountain-desktop.jpg');
     }
+  }
+
+  &--about .page-section__header {
+    @mixin atSmall {
+      color: rgb(255, 255, 255);
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &--about .page-section__heading {
+    color: $mainGrey;
+    @mixin atSmall {
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  &--projects::after {
+    @mixin atSmall {
+      content: '';
+      display: block;
+      position: absolute;
+      top: calc(100% - 20px);
+      left: 0;
+      width: 100%;
+      height: 380px;
+      overflow: hidden;
+      line-height: 0;
+      background-image: url('/assets/shapes/section-divider.svg');
+      background-size: 100% 380px;
+      background-repeat: no-repeat;
+      transform: rotate(180deg);
+      z-index: 1;
+    }
+    @mixin atLarge {
+      height: 500px;
+      background-size: 100% 500px;
+    }
+  }
+
+  &__header {
+    text-align: center;
+  }
+
+  &__heading {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    @mixin atSmall {
+      font-size: 2.375rem;
+      line-height: 1.3125;
+    }
+  }
+
+  &__heading--grey {
+    color: $mainGrey;
   }
 }
