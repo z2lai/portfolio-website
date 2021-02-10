@@ -475,7 +475,6 @@ h4,
 h5,
 h6 {
   font-family: 'Open Sans', 'Roboto', Helvetica, sans-serif;
-  color: #2E3842;
 }
 
 p {
@@ -1070,44 +1069,9 @@ ul {
 }
     }
 
-@media (min-width: 768px) {
-
-.page-section--projects::after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: calc(100% - 20px);
-      left: 0;
-      width: 100%;
-      height: 380px;
-      overflow: hidden;
-      line-height: 0;
-      background-image: url('/assets/shapes/section-divider.svg');
-      background-size: 100% 380px;
-      background-repeat: no-repeat;
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg);
-      z-index: 1
-  }
-    }
-
-@media (min-width: 1200px) {
-
-.page-section--projects::after {
-      height: 500px;
-      background-size: 100% 500px
-  }
-    }
-
 .page-section--about {
     padding-bottom: 0;
     background-color: #E0E6EF;
-    /* background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.7)
-      ),
-      url('/assets/images/high-contrast-mountain-mobile.jpg'); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1170,6 +1134,77 @@ ul {
         url('/assets/images/high-contrast-mountain-desktop.jpg')
   }
     }
+
+@media (min-width: 768px) {
+
+.page-section--about .page-section__header {
+      color: rgb(255, 255, 255);
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1)
+  }
+    }
+
+.page-section--about .page-section__heading {
+    color: #2E3842;
+  }
+
+@media (min-width: 768px) {
+
+.page-section--about .page-section__heading {
+      color: rgb(255, 255, 255)
+  }
+    }
+
+@media (min-width: 768px) {
+
+.page-section--projects::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: calc(100% - 20px);
+      left: 0;
+      width: 100%;
+      height: 380px;
+      overflow: hidden;
+      line-height: 0;
+      background-image: url('/assets/shapes/section-divider.svg');
+      background-size: 100% 380px;
+      background-repeat: no-repeat;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+      z-index: 1
+  }
+    }
+
+@media (min-width: 1200px) {
+
+.page-section--projects::after {
+      height: 500px;
+      background-size: 100% 500px
+  }
+    }
+
+.page-section__header {
+    text-align: center;
+  }
+
+.page-section__heading {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+@media (min-width: 768px) {
+
+.page-section__heading {
+      font-size: 2.375rem;
+      line-height: 1.3125
+  }
+    }
+
+.page-section__heading--grey {
+    color: #2E3842;
+  }
 
 .frame {
   background: transparent;
@@ -1438,60 +1473,6 @@ ul {
     width: 100%;
     height: auto;
   }
-
-.generic-content-container--center {
-    text-align: center;
-  }
-
-@media (min-width: 768px) {
-
-.generic-content-container--overlay {
-      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1)
-  }
-    }
-
-.section-title {
-  margin: 0;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-@media (min-width: 768px) {
-
-.section-title {
-    font-size: 2.375rem;
-    line-height: 1.3125
-}
-    }
-
-.section-title--grey {
-    color: #2E3842;
-  }
-
-.section-title--white {
-    color: rgb(255, 255, 255);
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-.section-title strong {
-    font-weight: 500;
-  }
-
-.section-title__icon {
-    display: block;
-    margin: 0 auto 0.6rem auto;
-  }
-
-@media (min-width: 768px) {
-
-.section-title__icon {
-      display: inline-block;
-      margin: 0 1.5rem 0 0;
-      vertical-align: top
-  }
-    }
 
 .subsection {
   margin: 4rem auto;
@@ -1994,7 +1975,7 @@ ul {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
   }
 
 @media (min-width: 576px) {
