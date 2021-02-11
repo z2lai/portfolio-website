@@ -1,16 +1,16 @@
 const toggleHeader = () => {
-  const header = document.getElementsByClassName('site-header')[0];
+  const header = document.getElementById('header');
   const headerRect = header.getBoundingClientRect();
   const scrollYCriteria = window.innerHeight - headerRect.height;
   if (window.pageYOffset >= scrollYCriteria) {
-    header.classList.add('site-header--is-translucent');
-    header.classList.remove('site-header--is-hidden');
+    header.classList.add('is-translucent');
+    header.classList.remove('is-hidden');
   } else if (window.pageYOffset >= headerRect.height) {
-    header.classList.add('site-header--is-hidden');
-    header.classList.remove('site-header--is-translucent');
+    header.classList.add('is-hidden');
+    header.classList.remove('is-translucent');
   } else {
-    header.classList.remove('site-header--is-translucent');
-    header.classList.remove('site-header--is-hidden');
+    header.classList.remove('is-translucent');
+    header.classList.remove('is-hidden');
   }
 };
 

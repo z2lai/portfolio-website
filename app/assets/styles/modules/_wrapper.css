@@ -1,6 +1,6 @@
 .wrapper {
-  margin: auto;
-  max-width: 1304px;
+  /* margin: auto;
+  max-width: 1304px; */
   padding-left: 18px;
   padding-right: 18px;
   overflow: hidden;
@@ -10,7 +10,7 @@
   }
 
   &--about {
-    max-width: 1334px;
+    /* max-width: 1334px; */
     @mixin atSmall {
       padding-left: 45px;
       padding-right: 45px;
