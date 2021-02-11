@@ -9,13 +9,13 @@
     padding: 15px 0;
   }
 
-  &--is-hidden {
+  &.is-hidden {
     opacity: 0;
     visibility: hidden;
     transition: opacity 300ms, visibility 300ms;
   }
 
-  &--is-translucent {
+  &.is-translucent {
     opacity: 1;
     background-color: rgba($mainGrey, 0.9);
     transition: none;
@@ -24,82 +24,5 @@
   &__logo {
     position: absolute;
     visibility: hidden;
-  }
-
-  &__menu-content {
-    position: relative;
-    padding: 0 18px;
-    line-height: 1.75em;
-    /* @mixin atMedium {
-      display: flex;
-      justify-content: flex-start;
-    } */
-  }
-
-  &__menu-content--is-visible {
-    opacity: 1;
-    z-index: 1;
-    transform: scale(1);
-  }
-
-  &__menu-icon {
-    display: none;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 20px;
-    height: 20px;
-    z-index: 10;
-    @mixin atMedium {
-      display: none;
-    }
-
-    &__middle {
-      position: absolute;
-      top: 9px;
-      width: 20px;
-      height: 3px;
-      background-color: #fff;
-      transform-origin: bottom left;
-      opacity: 1;
-      transition: all 0.3s ease-out;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0px;
-      width: 20px;
-      height: 3px;
-      background-color: #fff;
-      transform-origin: left center;
-      transition: transform 0.3s ease-out;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0px;
-      width: 20px;
-      height: 3px;
-      background-color: #fff;
-      transform-origin: left center;
-      transition: transform 0.3s ease-out;
-    }
-  }
-
-  &__menu-icon--close {
-    &::before {
-      transform: rotate(45deg) scaleX(1.25);
-    }
-
-    &::after {
-      transform: rotate(-45deg) scaleX(1.25) translateY(1px);
-    }
-
-    .site-header__menu-icon__middle {
-      opacity: 0;
-      transform: scaleX(0);
-    }
   }
 }

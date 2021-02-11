@@ -1,28 +1,22 @@
 .primary-nav {
+  line-height: 1.75em;
   ul {
     display: flex;
-    margin: 0;
-    padding: 0;
     justify-content: center;
   }
 
   li {
-    list-style-type: none;
     margin: 0 1rem;
   }
 
   a {
     position: relative;
-    font-size: 0.9rem;
+    letter-spacing: 0.2em;
     font-weight: 300;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
-    @mixin atExtraSmall {
-      font-size: 1rem;
-      letter-spacing: 0.2em;
-    }
   }
 
   a::before {
