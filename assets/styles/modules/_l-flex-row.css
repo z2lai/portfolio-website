@@ -33,7 +33,7 @@
   }
 
   &--type-margin-top-small > * {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 
   &--nowrap-after-medium {
@@ -49,8 +49,11 @@
   }
 
   &__item {
-    margin-top: 1.75rem;
+    margin-top: 2rem;
     flex: 1 1 100%;
+    @mixin atSmall {
+      margin-top: 1.75rem;
+    }
   }
 
   &__item--margin-top-none {

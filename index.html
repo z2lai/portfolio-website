@@ -89,7 +89,7 @@
             </div>
           </header>
 
-          <section class="l-flex-column l-flex-column--narow l-flex-column--gutters-small">
+          <section class="l-flex-column l-flex-column--narrow l-flex-column--gutters-small">
             <h4 class="subsection-subtitle subsection-subtitle--grey">
               Highlights
             </h4>
@@ -198,9 +198,9 @@
             </div>
           </section>
 
-          <section class="l-flex-column__item l-flex-column__item--extra-narrow">
-            <div class="frame frame--content-text">
-              <h4 class="subsection-subtitle l-flex-column__item-subtitle--inline subsection-subtitle--grey">
+          <section class="frame frame--content-text">
+            <div class="l-flex-column l-flex-column__gutters-extra-small">
+              <h4 class="subsection-subtitle subsection-subtitle--grey">
                 Lesson Learnt
               </h4>
               <p>
@@ -213,129 +213,131 @@
 
         </article>
 
-        <article
-          class="l-split-column l-split-column--gutters-after-medium l-flex-column__item l-flex-column__item--narrow l-flex-column__item--divider">
-          <div class="l-split-column__column l-split-column__column--extra-large-after-medium">
-            <header>
-              <h3 class="subsection-title subsection-title--grey">
-                Portfolio Website
-              </h3>
-              <p>
-                A single-page website for potential employers to glance over my best projects and my background.
-              </p>
-              <a href="https://github.com/z2lai/portfolio-website" class="link">
-                <svg class="link__icon">
-                  <use xlink:href="assets/icons/symbol-defs.svg#icon-github"></use>
-                </svg>Github
-              </a>
-            </header>
-            <section class="l-flex-column__item l-flex-column__item--inline">
-              <h4 class="subsection-subtitle l-flex-column__item-subtitle--inline subsection-subtitle--grey">
-                Highlights
-              </h4>
-              <ul id="p2-tech-icons"
-                class="l-flex-row l-flex-row--type-margin-sides-small l-flex-row--type-margin-top-small">
-                <li>
-                  <svg class="tech-icon tech-icon--small" data-tech="gulp">
-                    <use xlink:href="assets/icons/symbol-defs.svg#icon-gulp"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg class="tech-icon tech-icon--small" data-tech="browsersync">
-                    <use xlink:href="assets/icons/symbol-defs.svg#icon-browsersync"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg class="tech-icon tech-icon--small" data-tech="postcss">
-                    <use xlink:href="assets/icons/symbol-defs.svg#icon-postcss"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg class="tech-icon tech-icon--small" data-tech="webpack">
-                    <use xlink:href="assets/icons/symbol-defs.svg#icon-webpack"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg class="tech-icon tech-icon--small" data-tech="es6">
-                    <use xlink:href="assets/icons/symbol-defs.svg#icon-es6"></use>
-                  </svg>
-                </li>
-              </ul>
+        <article class="l-flex-column__item l-flex-column__item--divider">
+          <div class="l-split-column l-split-column--gutters-after-medium">
+            <div
+              class="l-flex-column l-flex-column--gutters-small l-split-column__column l-split-column__column--extra-large-after-medium">
+              <header>
+                <h3 class="subsection-title subsection-title--grey">
+                  Portfolio Website
+                </h3>
+                <p>
+                  A single-page website for potential employers to glance over my best projects and my background.
+                </p>
+                <a href="https://github.com/z2lai/portfolio-website" class="link">
+                  <svg class="link__icon">
+                    <use xlink:href="assets/icons/symbol-defs.svg#icon-github"></use>
+                  </svg>Github
+                </a>
+              </header>
+              <section class="l-flex-column">
+                <h4 class="subsection-subtitle subsection-subtitle--grey">
+                  Highlights
+                </h4>
+                <ul id="p2-tech-icons"
+                  class="l-flex-row l-flex-row--type-margin-sides-small l-flex-row--type-margin-top-small">
+                  <li>
+                    <svg class="tech-icon tech-icon--small" data-tech="gulp">
+                      <use xlink:href="assets/icons/symbol-defs.svg#icon-gulp"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="tech-icon tech-icon--small" data-tech="browsersync">
+                      <use xlink:href="assets/icons/symbol-defs.svg#icon-browsersync"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="tech-icon tech-icon--small" data-tech="postcss">
+                      <use xlink:href="assets/icons/symbol-defs.svg#icon-postcss"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="tech-icon tech-icon--small" data-tech="webpack">
+                      <use xlink:href="assets/icons/symbol-defs.svg#icon-webpack"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="tech-icon tech-icon--small" data-tech="es6">
+                      <use xlink:href="assets/icons/symbol-defs.svg#icon-es6"></use>
+                    </svg>
+                  </li>
+                </ul>
 
-              <div id="p2-tech-features" class="l-flex-row">
-                <div class="l-flex-row__item feature js-feature js-feature--gulp js-feature--browsersync">
-                  <div class="feature__text">
-                    <svg class="feature__icon">
-                      <use xlink:href="assets/icons/symbol-defs.svg#icon-file-symlink"></use>
-                    </svg>
-                    <h5 class="feature__title">Automated Workflow</h5>
-                    <p>
-                      Automated workflow using tools such as Gulp and Browsersync to trigger tasks on file change
-                      including
-                      CSS injection or browser refresh while enabling cross browser and mobile testing.
-                    </p>
+                <div id="p2-tech-features" class="l-flex-row">
+                  <div class="l-flex-row__item feature js-feature js-feature--gulp js-feature--browsersync">
+                    <div class="feature__text">
+                      <svg class="feature__icon">
+                        <use xlink:href="assets/icons/symbol-defs.svg#icon-file-symlink"></use>
+                      </svg>
+                      <h5 class="feature__title">Automated Workflow</h5>
+                      <p>
+                        Automated workflow using tools such as Gulp and Browsersync to trigger tasks on file change
+                        including
+                        CSS injection or browser refresh while enabling cross browser and mobile testing.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="l-flex-row__item l-flex-row__item--margin-top-none-after-small feature js-feature js-feature--postcss">
+                    <div class="feature__text">
+                      <svg class="feature__icon">
+                        <use xlink:href="assets/icons/symbol-defs.svg#icon-template"></use>
+                      </svg>
+                      <h5 class="feature__title">Scalable Modular CSS Architecture</h5>
+                      <p>
+                        Implemented a modular and scalable CSS architecture using PostCSS, BEM Methodology, and semantic
+                        classes.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="l-flex-row__item l-flex-row__item--margin-top-none-after-small feature js-feature js-feature--webpack js-feature--es6">
+                    <div class="feature__text">
+                      <svg class="feature__icon">
+                        <use xlink:href="assets/icons/symbol-defs.svg#icon-file-code"></use>
+                      </svg>
+                      <h5 class="feature__title">Modern Modular Javascript</h5>
+                      <p>
+                        Utilized modern, modular Javascript features, with Webpack and Babel loader for bundling and
+                        transpiling.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="l-flex-row__item l-flex-row__item--margin-top-none-after-small feature js-feature">
+                    <div class="feature__text">
+                      <svg class="feature__icon">
+                        <use xlink:href="assets/icons/symbol-defs.svg#icon-accessible"></use>
+                      </svg>
+                      <h5 class="feature__title">Mobile-first Design</h5>
+                      <p>
+                        Prioritized content layout with responsive and optimized images.
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div
-                  class="l-flex-row__item l-flex-row__item--margin-top-none-after-small feature js-feature js-feature--postcss">
-                  <div class="feature__text">
-                    <svg class="feature__icon">
-                      <use xlink:href="assets/icons/symbol-defs.svg#icon-template"></use>
-                    </svg>
-                    <h5 class="feature__title">Scalable Modular CSS Architecture</h5>
-                    <p>
-                      Implemented a modular and scalable CSS architecture using PostCSS, BEM Methodology, and semantic
-                      classes.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="l-flex-row__item l-flex-row__item--margin-top-none-after-small feature js-feature js-feature--webpack js-feature--es6">
-                  <div class="feature__text">
-                    <svg class="feature__icon">
-                      <use xlink:href="assets/icons/symbol-defs.svg#icon-file-code"></use>
-                    </svg>
-                    <h5 class="feature__title">Modern Modular Javascript</h5>
-                    <p>
-                      Utilized modern, modular Javascript features, with Webpack and Babel loader for bundling and
-                      transpiling.
-                    </p>
-                  </div>
-                </div>
-                <div class="l-flex-row__item l-flex-row__item--margin-top-none-after-small feature js-feature">
-                  <div class="feature__text">
-                    <svg class="feature__icon">
-                      <use xlink:href="assets/icons/symbol-defs.svg#icon-accessible"></use>
-                    </svg>
-                    <h5 class="feature__title">Mobile-first Design</h5>
-                    <p>
-                      Prioritized content layout with responsive and optimized images.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
+              </section>
+            </div>
 
-          <div class="l-split-column__column l-split-column__column--display-none-until-medium">
-            <div class="iphone-x">
-              <div class="iphone-x__notch">
-                <div class="iphone-x__camera"></div>
-                <div class="iphone-x__speaker"></div>
-              </div>
-              <div class="iphone-x__top-bar"></div>
-              <div class="iphone-x__sleep"></div>
-              <div class="iphone-x__bottom-bar"></div>
-              <div class="iphone-x__volume"></div>
-              <div class="iphone-x__overflow">
-                <div class="iphone-x__shadow iphone-x__shadow--tr"></div>
-                <div class="iphone-x__shadow iphone-x__shadow--tl"></div>
-                <div class="iphone-x__shadow iphone-x__shadow--br"></div>
-                <div class="iphone-x__shadow iphone-x__shadow--bl"></div>
-              </div>
-              <div class="iphone-x__inner-shadow"></div>
-              <div class="iphone-x__screen">
-                <img src="assets/images/portfolio-website-mobile.JPG" alt="Our founder, Jane Doe">
+            <div class="l-split-column__column l-split-column__column--display-none-until-medium">
+              <div class="iphone-x">
+                <div class="iphone-x__notch">
+                  <div class="iphone-x__camera"></div>
+                  <div class="iphone-x__speaker"></div>
+                </div>
+                <div class="iphone-x__top-bar"></div>
+                <div class="iphone-x__sleep"></div>
+                <div class="iphone-x__bottom-bar"></div>
+                <div class="iphone-x__volume"></div>
+                <div class="iphone-x__overflow">
+                  <div class="iphone-x__shadow iphone-x__shadow--tr"></div>
+                  <div class="iphone-x__shadow iphone-x__shadow--tl"></div>
+                  <div class="iphone-x__shadow iphone-x__shadow--br"></div>
+                  <div class="iphone-x__shadow iphone-x__shadow--bl"></div>
+                </div>
+                <div class="iphone-x__inner-shadow"></div>
+                <div class="iphone-x__screen">
+                  <img src="assets/images/portfolio-website-mobile.JPG" alt="Our founder, Jane Doe">
+                </div>
               </div>
             </div>
           </div>
