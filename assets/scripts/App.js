@@ -18,7 +18,7 @@ window.addEventListener('scroll', toggleHeader);
 
 if (!isMobileDevice()) {
   particles('banner', config);
-  const particlesOverlay = new ParticlesOverlay('banner', 'banner-overlay');
+  const particlesOverlay = new ParticlesOverlay('banner', 'repulse-div');
 }
 // const mobileMenu = new MobileMenu();
 // const revealOnScroll = new RevealOnScroll();
