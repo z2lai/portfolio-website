@@ -12,10 +12,6 @@
     font-size: 1.875rem;
   }
 
-  &--inline {
-    margin: 0 auto 1rem auto;
-  }
-
   &--grey {
     color: $mainGrey;
   }
