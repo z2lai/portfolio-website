@@ -10367,7 +10367,7 @@ window.addEventListener('scroll', _toggleHeader2.default);
 
 if (!(0, _isMobileDevice2.default)()) {
   (0, _particles.particles)('banner', _particlesjsConfig.config);
-  var particlesOverlay = new _particles.ParticlesOverlay('banner', 'banner-overlay');
+  var particlesOverlay = new _particles.ParticlesOverlay('banner', 'repulse-div');
 }
 // const mobileMenu = new MobileMenu();
 // const revealOnScroll = new RevealOnScroll();
