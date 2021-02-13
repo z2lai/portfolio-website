@@ -1,15 +1,15 @@
 .tech-icon {
   display: inline-block;
-  /* margin: 0 1rem; */
   width: 4rem;
   height: 4rem;
   stroke-width: 0;
   stroke: $mainGrey;
   fill: $mainGrey;
   @mixin atSmall {
-    /* margin: 0 50px; */
     width: 5rem;
     height: 5rem;
+  }
+  @mixin atMedium {
     filter: saturate(0);
     transition: filter 150ms;
   }
