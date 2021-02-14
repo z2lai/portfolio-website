@@ -460,10 +460,12 @@ $mainBlue: #2F5572; */
 }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'Open Sans', 'Roboto', Helvetica, sans-serif;
   color: #5E7387;
 }
@@ -676,7 +678,6 @@ ul {
 .wrapper {
   padding-left: 24px;
   padding-right: 24px;
-  overflow: hidden;
 }
 
 @media (min-width: 576px) {

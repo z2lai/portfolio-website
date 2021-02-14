@@ -3,10 +3,12 @@
 }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'Open Sans', 'Roboto', Helvetica, sans-serif;
   color: $secondaryGrey;
 }
