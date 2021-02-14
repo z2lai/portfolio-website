@@ -5,12 +5,18 @@
   flex-flow: column nowrap;
   align-items: center;
 
-  &--narrow {
-    max-width: 1304px;
+  &--narrow-after-medium {
+    max-width: $textWidth;
+    @mixin atMedium {
+      max-width: 1304px;
+    }
   }
 
-  &--wide {
-    max-width: 1334px;
+  &--wide-after-medium {
+    max-width: $textWidth;
+    @mixin atMedium {
+      max-width: 1244px;
+    }
   }
 
   &--gutters > * + * {
@@ -27,6 +33,13 @@
 
   &__item--margin-top-none {
     margin-top: 0;
+  }
+
+  &__item--margin-top-after-small {
+    margin-top: 0;
+    @mixin atSmall {
+      margin-top: 4rem;
+    }
   }
 
   &__item--divider {
@@ -48,7 +61,7 @@
     background: #e2e2e9;
   }
 
-  &__item--about {
+  &__item--margin-top-extra-large {
     margin-top: calc(4rem + 80px);
   }
 }

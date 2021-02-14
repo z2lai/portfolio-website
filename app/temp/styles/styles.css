@@ -760,6 +760,7 @@ ul {
     }
 
 .copyright {
+  width: 100%;
   padding: 2rem 0;
   line-height: 1.5rem;
   font-family: 'Open Sans', Helvetica, sans-serif;
@@ -773,7 +774,6 @@ ul {
 @media (min-width: 768px) {
 
 .copyright {
-    /* margin-top: 4rem; */
     border-top: 1px solid #e2e2e9
 }
     }
@@ -1235,6 +1235,21 @@ ul {
             align-items: center;
   }
 
+.l-flex-row--nowrap {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+@media (min-width: 1024px) {
+
+.l-flex-row--nowrap-after-medium {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap
+  }
+    }
+
 .l-flex-row--type-margin-left-small > * + * {
     margin-left: 1rem;
   }
@@ -1260,16 +1275,6 @@ ul {
 .l-flex-row--type-margin-top-small > * {
     margin-top: 1.5rem;
   }
-
-@media (min-width: 1024px) {
-
-.l-flex-row--nowrap-after-medium {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap
-  }
-    }
 
 @media (min-width: 1024px) {
 
@@ -1343,13 +1348,27 @@ ul {
           align-items: center;
 }
 
-.l-flex-column--narrow {
-    max-width: 1304px;
+.l-flex-column--narrow-after-medium {
+    max-width: 700px;
   }
 
-.l-flex-column--wide {
-    max-width: 1334px;
+@media (min-width: 1024px) {
+
+.l-flex-column--narrow-after-medium {
+      max-width: 1304px
   }
+    }
+
+.l-flex-column--wide-after-medium {
+    max-width: 700px;
+  }
+
+@media (min-width: 1024px) {
+
+.l-flex-column--wide-after-medium {
+      max-width: 1244px
+  }
+    }
 
 .l-flex-column--gutters > * + * {
     margin-top: 4rem;
@@ -1366,6 +1385,17 @@ ul {
 .l-flex-column__item--margin-top-none {
     margin-top: 0;
   }
+
+.l-flex-column__item--margin-top-after-small {
+    margin-top: 0;
+  }
+
+@media (min-width: 768px) {
+
+.l-flex-column__item--margin-top-after-small {
+      margin-top: 4rem
+  }
+    }
 
 .l-flex-column__item--divider {
     position: relative;
@@ -1390,7 +1420,7 @@ ul {
     background: #e2e2e9;
   }
 
-.l-flex-column__item--about {
+.l-flex-column__item--margin-top-extra-large {
     margin-top: calc(4rem + 80px);
   }
 

@@ -8,6 +8,16 @@
     align-items: center;
   }
 
+  &--nowrap {
+    flex-wrap: nowrap;
+  }
+
+  &--nowrap-after-medium {
+    @mixin atMedium {
+      flex-flow: row nowrap;
+    }
+  }
+
   &--type-margin-left-small > * + * {
     margin-left: 1rem;
   }
@@ -32,12 +42,6 @@
 
   &--type-margin-top-small > * {
     margin-top: 1.5rem;
-  }
-
-  &--nowrap-after-medium {
-    @mixin atMedium {
-      flex-flow: row nowrap;
-    }
   }
 
   &--gutters-after-medium > * + * {
