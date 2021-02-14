@@ -1,7 +1,9 @@
 .site-footer {
+  width: 100%;
   padding-top: 2rem;
   background-color: $mainGrey;
   @mixin atSmall {
+    padding-top: 0;
     background-color: initial;
   }
 }
