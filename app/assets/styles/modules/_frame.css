@@ -9,7 +9,7 @@
   }
 
   &--content-text {
-    max-width: 700px;
+    max-width: $textWidth;
     padding: 20px 30px;
     text-align: center;
   }

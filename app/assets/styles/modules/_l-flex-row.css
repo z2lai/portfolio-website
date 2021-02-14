@@ -48,7 +48,7 @@
 
   &__item {
     margin-top: 2rem;
-    max-width: 700px;
+    max-width: $textWidth;
     flex: 1 1 100%;
     @mixin atSmall {
       margin-top: 1.75rem;

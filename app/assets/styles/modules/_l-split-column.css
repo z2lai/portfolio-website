@@ -36,7 +36,7 @@
 
   &__column {
     flex: 1 1 auto;
-    max-width: 700px;
+    max-width: $textWidth;
   }
 
   &__column--large {

@@ -1,16 +1,10 @@
 .wrapper {
-  /* margin: auto;
-  max-width: 1304px; */
   padding-left: 24px;
   padding-right: 24px;
   overflow: hidden;
   @mixin atExtraSmall {
     padding-left: 45px;
     padding-right: 45px;
-  }
-
-  &--padding-extra {
-    /* max-width: 1334px; */
   }
 
   .wrapper {

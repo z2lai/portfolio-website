@@ -1,11 +1,16 @@
 .l-flex-column {
   position: relative;
   display: flex;
+  width: 100%;
   flex-flow: column nowrap;
   align-items: center;
 
   &--narrow {
     max-width: 1304px;
+  }
+
+  &--wide {
+    max-width: 1334px;
   }
 
   &--gutters > * + * {
