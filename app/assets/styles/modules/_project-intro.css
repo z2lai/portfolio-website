@@ -1,0 +1,16 @@
+.project-intro {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-flow: column nowrap;
+
+  &__title {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    text-align: left;
+    color: $mainGrey;
+    @mixin atSmall {
+      font-size: 2rem;
+    }
+  }
+}

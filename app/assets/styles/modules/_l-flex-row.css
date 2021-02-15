@@ -22,22 +22,18 @@
     margin-left: 1rem;
   }
 
-  &--type-margin-sides-large {
-    & > * {
-      margin-left: 1rem;
-      margin-right: 1rem;
-      @mixin atSmall {
-        margin-left: 2rem;
-        margin-right: 2rem;
-      }
+  &--type-margin-sides-large > * {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    @mixin atSmall {
+      margin-left: 2rem;
+      margin-right: 2rem;
     }
   }
 
-  &--type-margin-sides-small {
-    & > * {
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
+  &--type-margin-sides-small > * {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   &--type-margin-top-small > * {
