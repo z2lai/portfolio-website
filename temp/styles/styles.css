@@ -1134,13 +1134,13 @@ ul {
   }
     }
 
-.page-section--about .page-section__heading {
+.page-section--about .page-section__title {
     color: #2E3842;
   }
 
 @media (min-width: 768px) {
 
-.page-section--about .page-section__heading {
+.page-section--about .page-section__title {
       color: rgb(255, 255, 255)
   }
     }
@@ -1178,7 +1178,7 @@ ul {
     text-align: center;
   }
 
-.page-section__heading {
+.page-section__title {
     margin: 0;
     font-size: 2rem;
     font-weight: 700;
@@ -1187,13 +1187,13 @@ ul {
 
 @media (min-width: 768px) {
 
-.page-section__heading {
+.page-section__title {
       font-size: 2.375rem;
       line-height: 1.3125
   }
     }
 
-.page-section__heading--grey {
+.page-section__title--grey {
     color: #2E3842;
   }
 
@@ -1256,22 +1256,22 @@ ul {
   }
 
 .l-flex-row--type-margin-sides-large > * {
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 
 @media (min-width: 768px) {
 
 .l-flex-row--type-margin-sides-large > * {
-        margin-left: 2rem;
-        margin-right: 2rem
-    }
+      margin-left: 2rem;
+      margin-right: 2rem
+  }
     }
 
 .l-flex-row--type-margin-sides-small > * {
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 
 .l-flex-row--type-margin-top-small > * {
     margin-top: 1.5rem;
@@ -1594,23 +1594,31 @@ ul {
     background: #e2e2e9;
   }
 
-.subsection-title {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-  text-align: left;
+.project-intro {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
+
+.project-intro__title {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    text-align: left;
+    color: #2E3842;
+  }
 
 @media (min-width: 768px) {
 
-.subsection-title {
-    font-size: 2rem;
-    line-height: 1.3125
-}
-    }
-
-.subsection-title--grey {
-    color: #2E3842;
+.project-intro__title {
+      font-size: 2rem
   }
+    }
 
 .subsection-subtitle {
   position: relative;

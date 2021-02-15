@@ -45,7 +45,7 @@
     }
   }
 
-  &--about .page-section__heading {
+  &--about .page-section__title {
     color: $mainGrey;
     @mixin atSmall {
       color: rgb(255, 255, 255);
@@ -79,7 +79,7 @@
     text-align: center;
   }
 
-  &__heading {
+  &__title {
     margin: 0;
     font-size: 2rem;
     font-weight: 700;
@@ -90,7 +90,7 @@
     }
   }
 
-  &__heading--grey {
+  &__title--grey {
     color: $mainGrey;
   }
 }
