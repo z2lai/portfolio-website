@@ -147,8 +147,7 @@
     }
 
     &__bottom-bar {
-      bottom
-      : calc(80px / var(--size-divisor));
+      bottom: calc(80px / var(--size-divisor));
     }
     &__volume,
     &__volume::before,

@@ -84,13 +84,10 @@
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
+    color: $mainGrey;
     @mixin atSmall {
       font-size: 2.375rem;
       line-height: 1.3125;
     }
-  }
-
-  &__title--grey {
-    color: $mainGrey;
   }
 }

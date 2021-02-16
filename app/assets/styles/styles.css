@@ -12,9 +12,8 @@
 @import 'modules/_l-flex-row';
 @import 'modules/_l-flex-column';
 @import 'modules/_l-split-column';
-@import 'modules/_subsection';
 @import 'modules/_project-intro';
-@import 'modules/_subsection-subtitle';
+@import 'modules/_subheading';
 @import 'modules/_link';
 @import 'modules/_tech-icon';
 @import 'modules/_feature';

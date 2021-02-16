@@ -1,0 +1,36 @@
+.subheading {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 1.375rem;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $mainGrey;
+  @mixin atSmall {
+    font-size: 1.875rem;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 1px;
+    vertical-align: middle;
+    background-color: $mainGrey;
+  }
+
+  &::before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+
+  &::after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+}
