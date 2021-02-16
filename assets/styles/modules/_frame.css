@@ -1,7 +1,7 @@
 .frame {
   background: transparent;
   box-shadow: rgba(46, 46, 61, 0.24) 0px 24px 64px 0px;
-  
+
   &--content-image {
     @mixin atSmall {
       padding: 20px;
