@@ -1,14 +1,8 @@
 .tech-icon {
-  display: inline-block;
+  display: flex;
   width: 4rem;
-  height: 4rem;
-  stroke-width: 0;
-  stroke: $mainGrey;
-  fill: $mainGrey;
-  @mixin atSmall {
-    width: 5rem;
-    height: 5rem;
-  }
+  flex-flow: column nowrap;
+  align-items: center;
   @mixin atMedium {
     filter: saturate(0);
     transition: filter 150ms;
@@ -18,12 +12,37 @@
     filter: saturate(1);
   }
 
-  &--small {
-    width: 3.5rem;
-    height: 3.5rem;
+  & * {
+    pointer-events: none;
   }
 
-  & use {
-    pointer-events: none;
+  &--large-after-small {
+    @mixin atSmall {
+      width: 5rem;
+      font-size: 1.125rem;
+    }
+  }
+
+  &--large-after-small .tech-icon__icon {
+    @mixin atSmall {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+    stroke-width: 0;
+    stroke: $mainGrey;
+    fill: $mainGrey;
+  }
+
+  &__label {
+    margin-top: 0.2em;
+    text-align: center;
+    font-weight: 500;
+    color: $mainGrey;
   }
 }

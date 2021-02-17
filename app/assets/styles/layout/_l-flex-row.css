@@ -3,6 +3,10 @@
   display: flex;
   flex-flow: row wrap;
 
+  &--center {
+    justify-content: center;
+  }
+
   &--align-center {
     align-items: center;
   }
