@@ -27,7 +27,7 @@
     margin-top: 2rem;
   }
 
-  &--gutters--extra-small > * + * {
+  &--gutters-extra-small > * + * {
     margin-top: 1rem;
   }
 

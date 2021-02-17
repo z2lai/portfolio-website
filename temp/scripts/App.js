@@ -12009,7 +12009,7 @@ var config = exports.config = {
     },
     "move": {
       "enable": true,
-      "speed": 5,
+      "speed": 4,
       "direction": "bottom",
       "random": false,
       "straight": false,

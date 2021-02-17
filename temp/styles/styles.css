@@ -550,7 +550,7 @@ ul {
     margin-top: 2rem;
   }
 
-.l-flex-column--gutters--extra-small > * + * {
+.l-flex-column--gutters-extra-small > * + * {
     margin-top: 1rem;
   }
 
@@ -605,9 +605,6 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .l-flex-row--align-center {
