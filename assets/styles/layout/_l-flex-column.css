@@ -24,7 +24,10 @@
   }
 
   &--gutters-small > * + * {
-    margin-top: 2rem;
+    margin-top: 1.75rem;
+    @mixin atSmall {
+      margin-top: 2rem;
+    }
   }
 
   &--gutters-extra-small > * + * {
