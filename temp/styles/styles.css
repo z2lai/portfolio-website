@@ -1888,6 +1888,7 @@ ul {
 @media (min-width: 1024px) {
 
 .tech-icon {
+    color: #5E7387;
     -webkit-filter: saturate(0);
             filter: saturate(0);
     -webkit-transition: -webkit-filter 150ms;
@@ -1898,6 +1899,7 @@ ul {
     }
 
 .tech-icon:hover {
+    color: #2E3842;
     -webkit-filter: saturate(1);
             filter: saturate(1);
   }
@@ -1935,5 +1937,4 @@ ul {
     margin-top: 0.2em;
     text-align: center;
     font-weight: 500;
-    color: #2E3842;
   }
