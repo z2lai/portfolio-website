@@ -12009,7 +12009,7 @@ var config = exports.config = {
     },
     "move": {
       "enable": true,
-      "speed": 4,
+      "speed": 3,
       "direction": "bottom",
       "random": false,
       "straight": false,
@@ -12108,7 +12108,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 function isMobileDevice() {
-  return typeof window.orientation !== 'undefined' || navigator.userAgent.indexOf('IEMobile') !== -1;
+  return typeof window.orientation !== 'undefined' || navigator.userAgent.indexOf('IEMobile') !== -1 || !window.matchMedia('(min-width: 768px)').matches;
 }
 
 exports.default = isMobileDevice;

@@ -4,11 +4,13 @@
   flex-flow: column nowrap;
   align-items: center;
   @mixin atMedium {
+    color: $secondaryGrey;
     filter: saturate(0);
     transition: filter 150ms;
   }
 
   &:hover {
+    color: $mainGrey;
     filter: saturate(1);
   }
 
@@ -43,6 +45,5 @@
     margin-top: 0.2em;
     text-align: center;
     font-weight: 500;
-    color: $mainGrey;
   }
 }
