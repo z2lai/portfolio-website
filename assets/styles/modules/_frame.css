@@ -1,16 +1,19 @@
 .frame {
   background: transparent;
-  box-shadow: rgba(46, 46, 61, 0.24) 0px 24px 64px 0px;
 
   &--content-image {
+    box-shadow: rgba(46, 46, 61, 0.24) 0px 24px 64px 0px;
     @mixin atSmall {
       padding: 20px;
     }
   }
 
   &--content-text {
-    max-width: $textWidth;
-    padding: 20px 30px;
     text-align: center;
+    @mixin atSmall {
+      max-width: $textWidth;
+      padding: 20px 30px;
+      box-shadow: rgba(46, 46, 61, 0.24) 0px 24px 64px 0px;
+    }
   }
 }
