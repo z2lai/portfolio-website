@@ -45,12 +45,10 @@
 
     &__status-bar {
       height: 5%;
-      /* margin-bottom: -4px; // Fix this by fixing the scroll bar */
     }
 
     &__content {
       height: 95%;
-      overflow: auto;
     }
 
     &__top-bar,

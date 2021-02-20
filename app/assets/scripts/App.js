@@ -4,6 +4,7 @@ import TechFeatures from './modules/TechFeatures';
 import { particles, ParticlesOverlay } from './modules/particles';
 import { config } from './modules/particlesjs-config';
 import toggleHeader from './modules/toggleHeader';
+import SimpleBar from 'simplebar';
 
 import isMobileDevice from './utils/isMobileDevice';
 
@@ -29,4 +30,8 @@ const projectOneFeatures = new TechFeatures(
 const projectTwoFeatures = new TechFeatures(
   'p2-tech-icons',
   'p2-tech-features'
+);
+
+const customScrollbar = new SimpleBar(
+  document.getElementById('iphone-x-content')
 );
