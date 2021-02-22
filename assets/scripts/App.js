@@ -32,6 +32,17 @@ const projectTwoFeatures = new TechFeatures(
   'p2-tech-features'
 );
 
-const customScrollbar = new SimpleBar(
-  document.getElementById('iphone-x-content')
-);
+const scrollbar = new SimpleBar(document.getElementById('iphone-x-content'));
+
+const scrollElement = scrollbar.getScrollElement();
+const hideScrollChevrons = function () {
+  console.log(scrollElement.scrollTop);
+  if (scrollElement.scrollTop >= 200) {
+    const scrollChevrons = document.getElementsByClassName('js-scroll-chevron');
+    scrollChevrons.forEach((el) => {
+      el.style.animationIterationCount = '1';
+    });
+    scrollElement.removeEventListener('scroll', hideScrollChevrons);
+  }
+};
+scrollElement.addEventListener('scroll', hideScrollChevrons);

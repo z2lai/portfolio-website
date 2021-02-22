@@ -12284,7 +12284,20 @@ if (!(0, _isMobileDevice2.default)()) {
 var projectOneFeatures = new _TechFeatures2.default('p1-tech-icons', 'p1-tech-features');
 var projectTwoFeatures = new _TechFeatures2.default('p2-tech-icons', 'p2-tech-features');
 
-var customScrollbar = new _simplebar2.default(document.getElementById('iphone-x-content'));
+var scrollbar = new _simplebar2.default(document.getElementById('iphone-x-content'));
+
+var scrollElement = scrollbar.getScrollElement();
+var hideScrollChevrons = function hideScrollChevrons() {
+  console.log(scrollElement.scrollTop);
+  if (scrollElement.scrollTop >= 200) {
+    var scrollChevrons = document.getElementsByClassName('js-scroll-chevron');
+    scrollChevrons.forEach(function (el) {
+      el.style.animationIterationCount = '1';
+    });
+    scrollElement.removeEventListener('scroll', hideScrollChevrons);
+  }
+};
+scrollElement.addEventListener('scroll', hideScrollChevrons);
 
 /***/ }),
 /* 72 */
