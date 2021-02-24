@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,7 +23,6 @@
           <li><a href="#banner">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About</a></li>
-          <!-- <li><a href="#links">Contact</a></li> -->
         </ul>
       </nav>
 
@@ -35,7 +34,7 @@
       <h1 class="hero__title">Zheng Lai</h1>
       <p class="hero__description">A business analyst with a passion for writing modular code.</p>
       <div class="hero__button-wrapper">
-        <a href="#projects" class="button button--large">Learn More</a>
+        <a href="#projects" aria-label="Projects" class="button button--large">Learn More</a>
       </div>
     </header>
   </section>
@@ -67,12 +66,14 @@
                 submission through custom hooks.
               </p>
               <div class="l-flex-row l-flex-row--type-margin-left-small">
-                <a href="https://github.com/z2lai/react-emotion-multi-step-form" target="_blank" class="link">
+                <a href="https://github.com/z2lai/react-emotion-multi-step-form" target="_blank" rel="noopener" 
+                  aria-label="Github repository and documentation for React Emotion Multi-step Form" class="link">
                   <svg class="link__icon">
                     <use xlink:href="assets/icons/symbol-defs.svg#icon-github"></use>
                   </svg>Github
                 </a>
-                <a href="https://z2lai.github.io/react-emotion-multi-step-form/" target="_blank" class="link">
+                <a href="https://z2lai.github.io/react-emotion-multi-step-form/" target="_blank" rel="noopener" 
+                  aria-label="React Emotion Multi-step Form" class="link">
                   <svg class="link__icon">
                     <use xlink:href="assets/icons/symbol-defs.svg#icon-sphere"></use>
                   </svg>Website
@@ -82,8 +83,8 @@
 
             <div
               class="l-split-column__column l-split-column__column--large l-split-column__column--flex-none-after-small">
-              <img src="assets/images/react-multi-step-form.jpg" loading="lazy" alt="React Multi-step Form Library Example App"
-                class="frame frame--content-image">
+              <img src="assets/images/react-multi-step-form.jpg" loading="lazy"
+                alt="Example App using React Multi-step Form Library" class="frame frame--content-image">
             </div>
           </header>
 
@@ -225,7 +226,8 @@
                 <p>
                   A single-page website for potential employers to glance over my best projects and my background.
                 </p>
-                <a href="https://github.com/z2lai/portfolio-website" target="_blank" class="link">
+                <a href="https://github.com/z2lai/portfolio-website" target="_blank" rel="noopener" 
+                  aria-label="Github repository and documentation for portfolio website" class="link">
                   <svg class="link__icon">
                     <use xlink:href="assets/icons/symbol-defs.svg#icon-github"></use>
                   </svg>Github
@@ -336,13 +338,13 @@
                 </div>
                 <div class="iphone-x__inner-shadow"></div>
                 <div class="iphone-x__screen">
-                  <img src="assets/images/iphone-x-status-bar.jpg" loading="lazy" alt="iPhone X Status Bar"
-                    class="iphone-x__status-bar">
+                  <img src="assets/images/iphone-x-status-bar.jpg" loading="lazy" alt="" class="iphone-x__status-bar">
                   <div id="iphone-x-content" class="iphone-x__content">
                     <div class="iphone-x__scroll-chevron iphone-x__scroll-chevron--first js-scroll-chevron"></div>
                     <div class="iphone-x__scroll-chevron iphone-x__scroll-chevron--second js-scroll-chevron"></div>
                     <div class="iphone-x__scroll-chevron iphone-x__scroll-chevron--third js-scroll-chevron"></div>
-                    <img src="assets/images/portfolio-website-mobile-screenshot.png" loading="lazy" alt="Website Mobile View">
+                    <img src="assets/images/portfolio-website-mobile-screenshot.png" loading="lazy"
+                      alt="Mobile Design of Portfolio Website" title="Scroll down to view entire mobile design">
                   </div>
                 </div>
               </div>
@@ -371,10 +373,11 @@
               <article
                 class="skill l-flex-row__item l-flex-row__item--margin-top-none l-flex-row__item--size-4-after-medium">
                 <div class="skill__image-frame">
-                  <img src="assets/images/customer-relationship-badge.png" loading="lazy">
+                  <img src="assets/images/customer-relationship-badge.png" loading="lazy"
+                    alt="A handshake surrounded by a target, a checklist, chat bubbles, an open envelope and a globe">
                 </div>
                 <h3 class="skill__title">Customer Service</h3>
-                <h3 class="skill__subtitle">3 Years</h3>
+                <div class="skill__subtitle">3 Years</div>
                 <p>Through developing various customer-focused solutions, I have gained an aptitude for leveraging
                   technology to maximize business efficiency and improve customer service. I have experience with
                   designing
@@ -384,10 +387,11 @@
               <article
                 class="skill l-flex-row__item l-flex-row__item--margin-top-none l-flex-row__item--size-4-after-medium">
                 <div class="skill__image-frame">
-                  <img src="assets/images/data-analytics-badge.png" loading="lazy">
+                  <img src="assets/images/data-analytics-badge.png" loading="lazy"
+                    alt="Data charts under a magnifying glass">
                 </div>
                 <h3 class="skill__title">Data Analytics</h3>
-                <h3 class="skill__subtitle">5 Years</h3>
+                <div class="skill__subtitle">5 Years</div>
                 <p>As a business analyst, I am driven by data analysis when recommending business solutions. Moreover, I
                   have developed expertise in implementing data pipelines which collect, transform and visualize data to
                   reveal actionable insights.</p>
@@ -395,10 +399,11 @@
               <article
                 class="skill skill--last l-flex-row__item l-flex-row__item--margin-top-none l-flex-row__item--size-4-after-medium">
                 <div class="skill__image-frame">
-                  <img src="assets/images/idea-brain-badge.png" loading="lazy" height="100%">
+                  <img src="assets/images/idea-brain-badge.png" loading="lazy" alt="A brain within a glowing light bulb"
+                    height="100%">
                 </div>
                 <h3 class="skill__title">Continuous Learning</h3>
-                <h3 class="skill__subtitle">Lifetime</h3>
+                <div class="skill__subtitle">Lifetime</div>
                 <p>I have taught myself many skills including video editing and Fingerstyle guitar. As an avid learner,
                   I
                   am
@@ -420,15 +425,16 @@
             <section id="links" class="l-flex-column l-flex-column--gutters-small">
               <ul class="l-flex-row l-flex-row--nowrap l-flex-row--type-margin-sides-small l-flex-column__item">
                 <li>
-                  <a href="https://www.linkedin.com/in/zheng-lai-9a30808b/" target="_blank"
-                    class="button button--round">
+                  <a href="https://www.linkedin.com/in/zheng-lai-9a30808b/" target="_blank" rel="noopener" title="Linkedin profile"
+                    aria-label="Linkedin profile" class="button button--round">
                     <svg class="button__icon">
                       <use xlink:href="assets/icons/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/z2lai/" target="_blank" class="button button--round">
+                  <a href="https://github.com/z2lai/" target="_blank" rel="noopener" title="Github profile" aria-label="Github profile"
+                    class="button button--round">
                     <svg class="button__icon">
                       <use xlink:href="assets/icons/symbol-defs.svg#icon-github"></use>
                     </svg>
@@ -436,21 +442,24 @@
                 </li>
                 <li>
                   <a href="https://codesandbox.io/dashboard/drafts?workspace=f5ebd9da-bf58-4ce6-ade5-e51325bc9057"
-                    target="_blank" class="button button--round">
+                    target="_blank" rel="noopener" title="CodeSandbox code snippets" aria-label="CodeSandbox code snippets"
+                    class="button button--round">
                     <svg class="button__icon">
                       <use xlink:href="assets/icons/symbol-defs.svg#icon-codesandbox"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/z2lai/" target="_blank" class="button button--round">
+                  <a href="https://github.com/z2lai/" target="_blank" rel="noopener" title="Send me an email"
+                    aria-label="Send me an email" class="button button--round">
                     <svg class="button__icon">
                       <use xlink:href="assets/icons/symbol-defs.svg#icon-envelope"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
-              <a href="#" target="_blank" class="button button--large l-flex-column__item">Resume</a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Resume"
+                class="button button--large l-flex-column__item">Resume</a>
             </section>
 
             <div class="l-flex-column l-flex-column--wide-after-medium l-flex-column__item--margin-top-after-small">
