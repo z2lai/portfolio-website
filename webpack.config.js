@@ -1,21 +1,27 @@
 var path = require('path');
 
 module.exports = {
-    entry: "./app/assets/scripts/App.js",
-    output: {       
-        path: path.resolve(__dirname, "./app/temp/scripts"),
-        filename: "App.js"
-    },
-    module: {
-        loaders: [
-            {
-                loader: 'babel-loader',
-                query: {
-                    presets: ['es2015']
-                },
-                test: /\.js$/, // only apply babel to .js files
-                exclude: /node_modules/ // ignore all files in node_modules folder
-            }
-        ]
-    }
-}
+  mode: 'production',
+  entry: {
+    desktop: './app/assets/scripts/desktop.js',
+    mobile: './app/assets/scripts/mobile.js',
+  },
+  output: {
+    filename: '[name].js',
+    path: path.resolve(__dirname, './app/temp/scripts'),
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
+    ],
+  },
+};

@@ -21,39 +21,39 @@
         rgba(0, 0, 0, 0.7)
       ),
       url('/assets/images/night-mountains-hero-desktop.jpg');
-  }
 
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: #2e3842;
-    opacity: 0;
-    transition: opacity 1250ms ease-in-out 1250ms;
-    pointer-events: none;
-  }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: $mainGrey;
+      opacity: 0;
+      transition: opacity 1250ms ease-in-out 1250ms;
+      pointer-events: none;
+    }
 
-  &.is-preload::after {
-    opacity: 1;
-  }
+    &.is-preload::after {
+      opacity: 1;
+    }
 
-  &.is-preload .hero__title,
-  &.is-preload .hero__description,
-  &.is-preload .hero__button-wrapper {
-    opacity: 0;
-  }
+    &.is-preload .hero__title,
+    &.is-preload .hero__description,
+    &.is-preload .hero__button-wrapper {
+      opacity: 0;
+    }
 
-  &.is-preload .hero__title {
-    transform: scale(0.95);
-  }
+    &.is-preload .hero__title {
+      transform: scale(0.95);
+    }
 
-  &.is-preload .hero__title::before,
-  &.is-preload .hero__title::after {
-    width: 0;
+    &.is-preload .hero__title::before,
+    &.is-preload .hero__title::after {
+      width: 0;
+    }
   }
 
   &__text-content {
