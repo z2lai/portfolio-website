@@ -2,11 +2,10 @@
 <html lang="en-US">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
   <title>Zheng Lai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="keywords" content="web developer, front end, frontend, fullstack, react, javascript">
-  <meta name="description" content="A web developer">
+  <meta name="description" content="Web developer portfolio website">
 
   <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
@@ -66,13 +65,13 @@
                 submission through custom hooks.
               </p>
               <div class="l-flex-row l-flex-row--type-margin-left-small">
-                <a href="https://github.com/z2lai/react-emotion-multi-step-form" target="_blank" rel="noopener" 
+                <a href="https://github.com/z2lai/react-emotion-multi-step-form" target="_blank" rel="noopener"
                   aria-label="Github repository and documentation for React Emotion Multi-step Form" class="link">
                   <svg class="link__icon">
                     <use xlink:href="assets/icons/symbol-defs.svg#icon-github"></use>
                   </svg>Github
                 </a>
-                <a href="https://z2lai.github.io/react-emotion-multi-step-form/" target="_blank" rel="noopener" 
+                <a href="https://z2lai.github.io/react-emotion-multi-step-form/" target="_blank" rel="noopener"
                   aria-label="React Emotion Multi-step Form" class="link">
                   <svg class="link__icon">
                     <use xlink:href="assets/icons/symbol-defs.svg#icon-sphere"></use>
@@ -226,7 +225,7 @@
                 <p>
                   A single-page website for potential employers to glance over my best projects and my background.
                 </p>
-                <a href="https://github.com/z2lai/portfolio-website" target="_blank" rel="noopener" 
+                <a href="https://github.com/z2lai/portfolio-website" target="_blank" rel="noopener"
                   aria-label="Github repository and documentation for portfolio website" class="link">
                   <svg class="link__icon">
                     <use xlink:href="assets/icons/symbol-defs.svg#icon-github"></use>
@@ -425,16 +424,16 @@
             <section id="links" class="l-flex-column l-flex-column--gutters-small">
               <ul class="l-flex-row l-flex-row--nowrap l-flex-row--type-margin-sides-small l-flex-column__item">
                 <li>
-                  <a href="https://www.linkedin.com/in/zheng-lai-9a30808b/" target="_blank" rel="noopener" title="Linkedin profile"
-                    aria-label="Linkedin profile" class="button button--round">
+                  <a href="https://www.linkedin.com/in/zheng-lai-9a30808b/" target="_blank" rel="noopener"
+                    title="Linkedin profile" aria-label="Linkedin profile" class="button button--round">
                     <svg class="button__icon">
                       <use xlink:href="assets/icons/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/z2lai/" target="_blank" rel="noopener" title="Github profile" aria-label="Github profile"
-                    class="button button--round">
+                  <a href="https://github.com/z2lai/" target="_blank" rel="noopener" title="Github profile"
+                    aria-label="Github profile" class="button button--round">
                     <svg class="button__icon">
                       <use xlink:href="assets/icons/symbol-defs.svg#icon-github"></use>
                     </svg>
@@ -442,8 +441,8 @@
                 </li>
                 <li>
                   <a href="https://codesandbox.io/dashboard/drafts?workspace=f5ebd9da-bf58-4ce6-ade5-e51325bc9057"
-                    target="_blank" rel="noopener" title="CodeSandbox code snippets" aria-label="CodeSandbox code snippets"
-                    class="button button--round">
+                    target="_blank" rel="noopener" title="CodeSandbox code snippets"
+                    aria-label="CodeSandbox code snippets" class="button button--round">
                     <svg class="button__icon">
                       <use xlink:href="assets/icons/symbol-defs.svg#icon-codesandbox"></use>
                     </svg>
@@ -475,7 +474,16 @@
     </div>
   </div>
 
-  <script src="temp/scripts/App.js"></script>
+  <script>
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    if (window.matchMedia('(min-width: 768px)').matches) {
+      script.src = 'temp/scripts/desktop.js';
+    } else {
+      script.src = 'temp/scripts/mobile.js';
+    }
+    document.getElementsByTagName('head')[0].appendChild(script);
+  </script>
 </body>
 
 </html>
