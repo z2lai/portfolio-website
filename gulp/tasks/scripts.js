@@ -1,5 +1,3 @@
-/* Create a task that runs npm */
-
 var gulp = require('gulp'),
 webpack = require('webpack');
 
