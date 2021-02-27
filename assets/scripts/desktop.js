@@ -30,7 +30,6 @@ const scrollbar = new SimpleBar(document.getElementById('iphone-x-content'));
 
 const scrollElement = scrollbar.getScrollElement();
 const hideScrollChevrons = function () {
-  console.log(scrollElement.scrollTop);
   if (scrollElement.scrollTop >= 200) {
     const scrollChevrons = document.getElementsByClassName('js-scroll-chevron');
     scrollChevrons.forEach((el) => {
