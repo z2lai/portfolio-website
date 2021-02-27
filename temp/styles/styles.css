@@ -450,6 +450,10 @@ template {
   display: none;
 }
 
+/* $mainOrange: #D59541; */
+
+/* $mainOrange: #B95E04; */
+
 /* $mainTurqoise: #21B2A6;
 $mainPurple: #505393;
 $mainBlue: #2F5572; */
@@ -467,7 +471,7 @@ html {
 body {
   overflow-x: hidden;
   font-family: 'Open Sans', 'Roboto', Helvetica, sans-serif;
-  color: #5E7387;
+  color: #556980;
 }
 
 h1,
@@ -495,7 +499,7 @@ p {
     }
 
 a {
-  color: #D59541;
+  color: #A64E0F;
 }
 
 ul {
@@ -978,7 +982,7 @@ ul {
     display: block;
     width: 2.5em;
     height: 2.5em;
-    color: #D59541;
+    color: #A64E0F;
     stroke-width: 1.5;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -1563,7 +1567,7 @@ ul {
 .link {
   line-height: 1.65;
   font-weight: 500;
-  color: #D59541;
+  color: #A64E0F;
   text-decoration: none;
 }
 
@@ -1928,10 +1932,9 @@ ul {
 
 .skill__subtitle {
     margin: 0.25rem 0 0.5rem 0;
-    font-size: 0.9375rem;
     font-weight: 400;
     text-align: center;
-    color: #D59541;
+    color: #A64E0F;
   }
 
 .subheading {
@@ -1993,7 +1996,7 @@ ul {
 @media (min-width: 1024px) {
 
 .tech-icon {
-    color: #5E7387;
+    color: #556980;
     -webkit-filter: saturate(0);
             filter: saturate(0);
     -webkit-transition: -webkit-filter 150ms;
@@ -2204,7 +2207,7 @@ ul {
 .simplebar-scrollbar:before {
   position: absolute;
   content: '';
-  background: #5E7387;
+  background: #556980;
   border-radius: 7px;
   left: 2px;
   right: 2px;
