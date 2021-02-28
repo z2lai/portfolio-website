@@ -1,10 +1,9 @@
 import { particles, ParticlesOverlay } from './modules/particles';
 import { config } from './modules/particlesjs-config';
+import addScrollbar from './modules/addScrollbar';
 import isMobileDevice from './utils/isMobileDevice';
-import toggleHeader from './modules/toggleHeader';
 import TechFeatures from './modules/TechFeatures';
-
-import SimpleBar from 'simplebar';
+import toggleHeader from './modules/toggleHeader';
 
 window.addEventListener('load', function () {
   document.getElementById('banner').classList.remove('is-preload');
@@ -26,16 +25,4 @@ const projectTwoFeatures = new TechFeatures(
   'p2-tech-features'
 );
 
-const scrollbar = new SimpleBar(document.getElementById('iphone-x-content'));
-
-const scrollElement = scrollbar.getScrollElement();
-const hideScrollChevrons = function () {
-  if (scrollElement.scrollTop >= 200) {
-    const scrollChevrons = document.getElementsByClassName('js-scroll-chevron');
-    scrollChevrons.forEach((el) => {
-      el.style.animationIterationCount = '1';
-    });
-    scrollElement.removeEventListener('scroll', hideScrollChevrons);
-  }
-};
-scrollElement.addEventListener('scroll', hideScrollChevrons);
+addScrollbar('iphone-x-content');
