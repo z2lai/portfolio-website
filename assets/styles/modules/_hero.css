@@ -8,7 +8,7 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.9)
     ),
-    url('/assets/images/night-mountains-hero-mobile.jpg');
+    url('../../assets/images/night-mountains-hero-mobile.jpg');
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.9)
       ),
-      url('/assets/images/night-mountains-hero-desktop.jpg');
+      url('../../assets/images/night-mountains-hero-desktop.jpg');
 
     &::after {
       content: '';
