@@ -1048,13 +1048,13 @@ ul {
       from(rgba(0, 0, 0, 0.5)),
       to(rgba(0, 0, 0, 0.9))
     ),
-    url('/assets/images/night-mountains-hero-mobile.jpg');
+    url('../../assets/images/night-mountains-hero-mobile.jpg');
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.9)
     ),
-    url('/assets/images/night-mountains-hero-mobile.jpg');
+    url('../../assets/images/night-mountains-hero-mobile.jpg');
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1071,13 +1071,13 @@ ul {
         from(rgba(0, 0, 0, 0.5)),
         to(rgba(0, 0, 0, 0.9))
       ),
-      url('/assets/images/night-mountains-hero-desktop.jpg');
+      url('../../assets/images/night-mountains-hero-desktop.jpg');
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.9)
       ),
-      url('/assets/images/night-mountains-hero-desktop.jpg')
+      url('../../assets/images/night-mountains-hero-desktop.jpg')
 }
 
     .hero::after {
@@ -1626,13 +1626,13 @@ ul {
           from(rgba(0, 0, 0, 0.3)),
           to(rgba(0, 0, 0, 0.7))
         ),
-        url('/assets/images/high-contrast-mountain-tablet-portrait.jpg');
+        url('../../assets/images/high-contrast-mountain-tablet-portrait.jpg');
       background-image: linear-gradient(
           to bottom,
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.7)
         ),
-        url('/assets/images/high-contrast-mountain-tablet-portrait.jpg');
+        url('../../assets/images/high-contrast-mountain-tablet-portrait.jpg');
       background-attachment: fixed
   }
     }
@@ -1646,13 +1646,13 @@ ul {
           from(rgba(0, 0, 0, 0.3)),
           to(rgba(0, 0, 0, 0.7))
         ),
-        url('/assets/images/high-contrast-mountain-tablet-landscape.jpg');
+        url('../../assets/images/high-contrast-mountain-tablet-landscape.jpg');
       background-image: linear-gradient(
           to bottom,
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.7)
         ),
-        url('/assets/images/high-contrast-mountain-tablet-landscape.jpg')
+        url('../../assets/images/high-contrast-mountain-tablet-landscape.jpg')
   }
     }
 
@@ -1665,13 +1665,13 @@ ul {
           from(rgba(0, 0, 0, 0.3)),
           to(rgba(0, 0, 0, 0.7))
         ),
-        url('/assets/images/high-contrast-mountain-desktop.jpg');
+        url('../../assets/images/high-contrast-mountain-desktop.jpg');
       background-image: linear-gradient(
           to bottom,
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.7)
         ),
-        url('/assets/images/high-contrast-mountain-desktop.jpg')
+        url('../../assets/images/high-contrast-mountain-desktop.jpg')
   }
     }
 
@@ -1706,7 +1706,7 @@ ul {
       height: 380px;
       overflow: hidden;
       line-height: 0;
-      background-image: url('/assets/shapes/section-divider.svg');
+      background-image: url('../../assets/shapes/section-divider.svg');
       background-size: 100% 380px;
       background-repeat: no-repeat;
       -webkit-transform: rotate(180deg);

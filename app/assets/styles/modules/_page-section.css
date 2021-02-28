@@ -17,7 +17,7 @@
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.7)
         ),
-        url('/assets/images/high-contrast-mountain-tablet-portrait.jpg');
+        url('../../assets/images/high-contrast-mountain-tablet-portrait.jpg');
       background-attachment: fixed;
     }
     @mixin atMedium {
@@ -26,7 +26,7 @@
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.7)
         ),
-        url('/assets/images/high-contrast-mountain-tablet-landscape.jpg');
+        url('../../assets/images/high-contrast-mountain-tablet-landscape.jpg');
     }
     @mixin atLarge {
       background-image: linear-gradient(
@@ -34,7 +34,7 @@
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.7)
         ),
-        url('/assets/images/high-contrast-mountain-desktop.jpg');
+        url('../../assets/images/high-contrast-mountain-desktop.jpg');
     }
   }
 
@@ -63,7 +63,7 @@
       height: 380px;
       overflow: hidden;
       line-height: 0;
-      background-image: url('/assets/shapes/section-divider.svg');
+      background-image: url('../../assets/shapes/section-divider.svg');
       background-size: 100% 380px;
       background-repeat: no-repeat;
       transform: rotate(180deg);
