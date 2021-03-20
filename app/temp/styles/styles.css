@@ -1090,8 +1090,8 @@ ul {
       height: 100%;
       background: #2E3842;
       opacity: 0;
-      -webkit-transition: opacity 1250ms ease-in-out 1250ms;
-      transition: opacity 1250ms ease-in-out 1250ms;
+      -webkit-transition: opacity 1500ms ease-in-out 1000ms;
+      transition: opacity 1500ms ease-in-out 1000ms;
       pointer-events: none;
     }
 
@@ -1203,8 +1203,8 @@ ul {
     color: #fff;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
     opacity: 1;
-    -webkit-transition: opacity 1250ms ease-in-out 1250ms;
-    transition: opacity 1250ms ease-in-out 1250ms;
+    -webkit-transition: opacity 1250ms ease-in-out 1000ms;
+    transition: opacity 1250ms ease-in-out 1000ms;
   }
 
 @media (min-width: 768px) {
@@ -1222,9 +1222,9 @@ ul {
     opacity: 1;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    -webkit-transition: opacity 1250ms ease-in-out 1250ms,
+    -webkit-transition: opacity 1250ms ease-in-out 1000ms,
       background-color 0.2s ease-in-out;
-    transition: opacity 1250ms ease-in-out 1250ms,
+    transition: opacity 1250ms ease-in-out 1000ms,
       background-color 0.2s ease-in-out;
   }
 
