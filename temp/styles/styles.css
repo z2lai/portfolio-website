@@ -630,6 +630,12 @@ ul {
             align-items: center;
   }
 
+.l-flex-row--align-start {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
 .l-flex-row--nowrap {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -2048,6 +2054,11 @@ ul {
     stroke-width: 0;
     stroke: #2E3842;
     fill: #2E3842;
+  }
+
+.tech-icon__icon--shadow {
+    -webkit-filter: drop-shadow(0px 2px 1px rgba(46, 46, 61, 0.5));
+            filter: drop-shadow(0px 2px 1px rgba(46, 46, 61, 0.5));
   }
 
 .tech-icon__label {
