@@ -1209,8 +1209,8 @@ ul {
     color: #fff;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
     opacity: 1;
-    -webkit-transition: opacity 1250ms ease-in-out 1000ms;
-    transition: opacity 1250ms ease-in-out 1000ms;
+    -webkit-transition: opacity 1000ms ease-in-out 1000ms;
+    transition: opacity 1000ms ease-in-out 1000ms;
   }
 
 @media (min-width: 768px) {
@@ -1228,9 +1228,9 @@ ul {
     opacity: 1;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    -webkit-transition: opacity 1250ms ease-in-out 1000ms,
+    -webkit-transition: opacity 1000ms ease-in-out 1000ms,
       background-color 0.2s ease-in-out;
-    transition: opacity 1250ms ease-in-out 1000ms,
+    transition: opacity 1000ms ease-in-out 1000ms,
       background-color 0.2s ease-in-out;
   }
 
