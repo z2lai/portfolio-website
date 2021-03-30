@@ -6,14 +6,14 @@ import TechFeatures from './modules/TechFeatures';
 import toggleHeader from './modules/toggleHeader';
 
 window.addEventListener('load', function () {
-  document.getElementById('banner').classList.remove('is-preload');
+  document.getElementById('home').classList.remove('is-preload');
 });
 
 window.addEventListener('scroll', toggleHeader);
 
 if (!isMobileDevice()) {
-  particles('banner', config);
-  const particlesOverlay = new ParticlesOverlay('banner', 'repulse-div');
+  particles('home', config);
+  const particlesOverlay = new ParticlesOverlay('home', 'repulse-div');
 }
 
 const projectOneFeatures = new TechFeatures(
